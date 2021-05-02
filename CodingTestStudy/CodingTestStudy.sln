@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodingTestStudy", "CodingTestStudy.vcxproj", "{8B695C09-3856-4C4B-AD42-64C560FAC63D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GroomEdu", "..\GroomEdu\GroomEdu.vcxproj", "{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{8B695C09-3856-4C4B-AD42-64C560FAC63D}.Release|x64.Build.0 = Release|x64
 		{8B695C09-3856-4C4B-AD42-64C560FAC63D}.Release|x86.ActiveCfg = Release|Win32
 		{8B695C09-3856-4C4B-AD42-64C560FAC63D}.Release|x86.Build.0 = Release|Win32
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Debug|x64.ActiveCfg = Debug|x64
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Debug|x64.Build.0 = Debug|x64
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Debug|x86.Build.0 = Debug|Win32
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x64.ActiveCfg = Release|x64
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x64.Build.0 = Release|x64
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x86.ActiveCfg = Release|Win32
+		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,11 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OrderingTshirts.c" />
+    <ClCompile Include="RatingDiscount.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8b695c09-3856-4c4b-ad42-64c560fac63d}</ProjectGuid>
-    <RootNamespace>CodingTestStudy</RootNamespace>
+    <ProjectGuid>{7f93ec60-5f64-4abe-a43d-c8f21c752b3b}</ProjectGuid>
+    <RootNamespace>GroomEdu</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
