@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 int* solution(char* shirt_size[], int shirt_size_len) {
-	int* answer;
+	int* answer=(int*)malloc(sizeof(int)*6);
 	int arr[6];
 	answer = arr;
 	for (int i = 0; i < shirt_size_len; i++) {
@@ -13,6 +13,7 @@ int* solution(char* shirt_size[], int shirt_size_len) {
 		else if (shirt_size[i] == "XL") arr[4]++;
 		else if (shirt_size[i] == "XXL") arr[5]++;
 	}
+	free;
 	return answer;
 }
 int main() {
