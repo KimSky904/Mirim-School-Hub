@@ -3,15 +3,16 @@
 #include <stdlib.h>
 int* solution(char* shirt_size[], int shirt_size_len) {
 	int* answer=(int*)malloc(sizeof(int)*6);
-	int arr[6];
-	answer = arr;
+	//int arr[6];
+	//answer = arr;
 	for (int i = 0; i < shirt_size_len; i++) {
-		if (shirt_size[i] == "XS") arr[0]++;
-		else if (shirt_size[i] == "S") arr[1]++;
-		else if (shirt_size[i] == "M") arr[2]++;
-		else if (shirt_size[i] == "L") arr[3]++;
-		else if (shirt_size[i] == "XL") arr[4]++;
-		else if (shirt_size[i] == "XXL") arr[5]++;
+		answer[i] = NULL;
+		if (shirt_size[i] == "XS") answer[0]++;
+		else if (shirt_size[i] == "S") answer[1]++;
+		else if (shirt_size[i] == "M") answer[2]++;
+		else if (shirt_size[i] == "L") answer[3]++;
+		else if (shirt_size[i] == "XL") answer[4]++;
+		else if (shirt_size[i] == "XXL") answer[5]++;
 	}
 	free;
 	return answer;
