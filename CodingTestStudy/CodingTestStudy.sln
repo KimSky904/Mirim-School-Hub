@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodingTestStudy", "CodingTe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GroomEdu", "..\GroomEdu\GroomEdu.vcxproj", "{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BeakJoon", "..\BeakJoon\BeakJoon.vcxproj", "{480C167A-0D3A-4BB4-8048-B100B27AAE8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x64.Build.0 = Release|x64
 		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x86.ActiveCfg = Release|Win32
 		{7F93EC60-5F64-4ABE-A43D-C8F21C752B3B}.Release|x86.Build.0 = Release|Win32
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Debug|x64.ActiveCfg = Debug|x64
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Debug|x64.Build.0 = Debug|x64
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Debug|x86.ActiveCfg = Debug|Win32
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Debug|x86.Build.0 = Debug|Win32
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Release|x64.ActiveCfg = Release|x64
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Release|x64.Build.0 = Release|x64
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Release|x86.ActiveCfg = Release|Win32
+		{480C167A-0D3A-4BB4-8048-B100B27AAE8F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
