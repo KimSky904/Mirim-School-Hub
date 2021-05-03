@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OrderingTshirts.c">
+    <ClCompile Include="HighLowValue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StartEndDay.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

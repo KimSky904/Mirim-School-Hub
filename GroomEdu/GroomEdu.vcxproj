@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OrderingTshirts.c" />
+    <ClCompile Include="HighLowValue.c" />
+    <ClCompile Include="StartEndDay.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
