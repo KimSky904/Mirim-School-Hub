@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HighLowValue.c" />
-    <ClCompile Include="StartEndDay.c" />
+    <ClCompile Include="clap_369.c" />
+    <ClCompile Include="reverse_array.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HighLowValue.c">
+    <ClCompile Include="clap_369.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="StartEndDay.c">
+    <ClCompile Include="reverse_array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
