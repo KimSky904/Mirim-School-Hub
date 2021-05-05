@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="multifly_treble_figures.cpp">
+    <ClCompile Include="score_exam.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
