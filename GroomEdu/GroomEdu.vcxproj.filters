@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clap_369.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="reverse_array.c">
+    <ClCompile Include="count_class_student.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

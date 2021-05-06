@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clap_369.c" />
-    <ClCompile Include="reverse_array.c" />
+    <ClCompile Include="count_class_student.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
