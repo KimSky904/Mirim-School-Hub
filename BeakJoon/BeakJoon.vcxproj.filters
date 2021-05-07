@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quadrant_n.cpp">
+    <ClCompile Include="alarm_clock.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
