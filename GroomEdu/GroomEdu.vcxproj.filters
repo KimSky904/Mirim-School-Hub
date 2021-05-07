@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="palindrome.c">
+    <ClCompile Include="count_lowerthan_avg.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
