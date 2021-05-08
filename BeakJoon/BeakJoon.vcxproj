@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="alarm_clock.cpp" />
     <ClCompile Include="plus_case.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

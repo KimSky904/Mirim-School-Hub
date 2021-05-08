@@ -18,5 +18,8 @@
     <ClCompile Include="count_lowerthan_avg.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="max_gloves.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
