@@ -21,5 +21,8 @@
     <ClCompile Include="max_gloves.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="more_multiple.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
