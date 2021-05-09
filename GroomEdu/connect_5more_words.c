@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <string.h>
 char* solution(char* words[], int words_len) {
-	char* answer = "";
+	char* answer = NULL;
 	int count = 0;
 	answer = (char*)malloc(sizeof(int) * (words_len));
 	for (int i = 0; i < words_len; i++) {
-		if (strlen(words[i]) >= 5) strcat(answer, words[i]);
+		if (strlen(words[i]) >= 5) strcat(answer,words[i]);
 		else count++;
 	}
 	if (count == words_len) answer = "empty";
