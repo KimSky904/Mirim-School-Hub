@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="count_lowerthan_avg.c" />
-    <ClCompile Include="max_gloves.c" />
-    <ClCompile Include="more_multiple.c" />
+    <ClCompile Include="square_of_evennum.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
