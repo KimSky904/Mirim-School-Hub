@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="connect_5more_words.c" />
+    <ClCompile Include="fight_with_monster.c" />
     <ClCompile Include="square_of_evennum.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

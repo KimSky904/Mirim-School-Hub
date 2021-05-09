@@ -21,5 +21,8 @@
     <ClCompile Include="connect_5more_words.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="fight_with_monster.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
