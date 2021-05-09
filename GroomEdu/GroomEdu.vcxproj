@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="connect_5more_words.c" />
-    <ClCompile Include="fight_with_monster.c" />
-    <ClCompile Include="square_of_evennum.c" />
+    <ClCompile Include="elevator_movement.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
