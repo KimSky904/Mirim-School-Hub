@@ -18,5 +18,8 @@
     <ClCompile Include="square_of_evennum.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="connect_5more_words.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
