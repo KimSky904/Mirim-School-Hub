@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\GroomEdu\sum_case_7.cpp">
+    <ClCompile Include="sum_case_8.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
