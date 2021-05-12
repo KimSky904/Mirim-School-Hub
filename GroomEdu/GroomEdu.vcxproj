@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="count_primeNum.c" />
+    <ClCompile Include="giftcard.c" />
     <ClCompile Include="temperature.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
