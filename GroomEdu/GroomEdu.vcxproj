@@ -22,6 +22,7 @@
     <ClCompile Include="count_primeNum.c" />
     <ClCompile Include="giftcard.c" />
     <ClCompile Include="temperature.c" />
+    <ClCompile Include="vote_count.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
