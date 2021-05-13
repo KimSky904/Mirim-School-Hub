@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="count_scholarship_student.c" />
     <ClCompile Include="giftcard.c" />
     <ClCompile Include="student_score_tank.c" />
     <ClCompile Include="vote_count.c" />

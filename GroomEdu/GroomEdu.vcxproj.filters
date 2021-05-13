@@ -24,5 +24,8 @@
     <ClCompile Include="student_score_tank.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="count_scholarship_student.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
