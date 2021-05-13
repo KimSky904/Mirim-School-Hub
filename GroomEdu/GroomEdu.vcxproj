@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="giftcard.c" />
+    <ClCompile Include="student_score_tank.c" />
     <ClCompile Include="vote_count.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
