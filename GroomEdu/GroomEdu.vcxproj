@@ -19,10 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="count_scholarship_student.c" />
-    <ClCompile Include="giftcard.c" />
-    <ClCompile Include="student_score_tank.c" />
-    <ClCompile Include="vote_count.c" />
+    <ClCompile Include="fix_word.c" />
+    <ClCompile Include="gymnast_score.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

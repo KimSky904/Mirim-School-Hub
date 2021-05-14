@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="giftcard.c">
+    <ClCompile Include="fix_word.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="vote_count.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="student_score_tank.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="count_scholarship_student.c">
+    <ClCompile Include="gymnast_score.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
