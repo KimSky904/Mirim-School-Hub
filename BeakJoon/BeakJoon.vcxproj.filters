@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="progression.cpp">
+    <ClCompile Include="plus_cycle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="plus_cycle_re.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="progression.cpp" />
+    <ClCompile Include="plus_cycle.cpp" />
+    <ClCompile Include="plus_cycle_re.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
