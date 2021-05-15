@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="coloring_tile.c" />
     <ClCompile Include="transportation_costs.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
