@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="plus_cycle.cpp" />
-    <ClCompile Include="plus_cycle_re.cpp" />
+    <ClCompile Include="array_max_index.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
