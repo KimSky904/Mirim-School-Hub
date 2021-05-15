@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fix_word.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="gymnast_score.c">
+    <ClCompile Include="transportation_costs.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
