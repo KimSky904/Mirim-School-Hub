@@ -18,5 +18,8 @@
     <ClCompile Include="making_juice.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="TV_times.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
