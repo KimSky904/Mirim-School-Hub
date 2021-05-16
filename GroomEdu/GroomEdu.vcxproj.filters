@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="transportation_costs.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="coloring_tile.c">
+    <ClCompile Include="making_juice.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
