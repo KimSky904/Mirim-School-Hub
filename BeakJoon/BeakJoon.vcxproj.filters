@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="array_max_index.cpp">
+    <ClCompile Include="array_count_num.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
