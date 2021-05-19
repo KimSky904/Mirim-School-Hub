@@ -21,5 +21,8 @@
     <ClCompile Include="TV_times.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="get_score.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
