@@ -18,5 +18,8 @@
     <ClCompile Include="array_finding_same_num.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="function_total_longlong.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
