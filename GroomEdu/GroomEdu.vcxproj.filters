@@ -24,5 +24,8 @@
     <ClCompile Include="get_score.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="assistant_student_num.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

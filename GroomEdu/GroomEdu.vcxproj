@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="assistant_student_num.c" />
     <ClCompile Include="get_score.c" />
     <ClCompile Include="making_juice.c" />
     <ClCompile Include="TV_times.c" />
