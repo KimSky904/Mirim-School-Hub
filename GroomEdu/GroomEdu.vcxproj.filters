@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="making_juice.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="TV_times.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="get_score.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="assistant_student_num.c">
+    <ClCompile Include="diet_A_exercising.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
