@@ -24,5 +24,8 @@
     <ClCompile Include="whos_the_president.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="score_upper_lower.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

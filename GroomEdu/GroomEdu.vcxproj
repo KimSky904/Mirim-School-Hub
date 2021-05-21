@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="diet_A_exercising.c" />
     <ClCompile Include="return_point.c" />
+    <ClCompile Include="score_upper_lower.c" />
     <ClCompile Include="whos_the_president.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
