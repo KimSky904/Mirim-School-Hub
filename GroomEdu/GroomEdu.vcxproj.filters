@@ -27,5 +27,8 @@
     <ClCompile Include="score_upper_lower.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="count_test_candidate.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

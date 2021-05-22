@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="count_test_candidate.c" />
     <ClCompile Include="diet_A_exercising.c" />
     <ClCompile Include="return_point.c" />
     <ClCompile Include="score_upper_lower.c" />
