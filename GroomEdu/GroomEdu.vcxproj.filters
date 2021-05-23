@@ -15,22 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="diet_A_exercising.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="return_point.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="whos_the_president.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="score_upper_lower.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="count_test_candidate.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="count_dangerZone.c">
+    <ClCompile Include="ladder_game.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
