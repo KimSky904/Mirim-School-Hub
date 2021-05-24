@@ -21,5 +21,8 @@
     <ClCompile Include="count_empty_time.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="fine_add.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

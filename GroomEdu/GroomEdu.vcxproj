@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="count_empty_time.c" />
+    <ClCompile Include="fine_add.c" />
     <ClCompile Include="ladder_game.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
