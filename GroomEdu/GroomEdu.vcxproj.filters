@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ladder_game.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="count_empty_time.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="fine_add.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="count_score.c">
+    <ClCompile Include="mediate_math_score.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

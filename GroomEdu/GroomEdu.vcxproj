@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="count_empty_time.c" />
-    <ClCompile Include="count_score.c" />
-    <ClCompile Include="fine_add.c" />
-    <ClCompile Include="ladder_game.c" />
+    <ClCompile Include="mediate_math_score.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
