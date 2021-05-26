@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="match_marketDay.c" />
-    <ClCompile Include="mediate_math_score.c" />
+    <ClCompile Include="counter_time.c" />
+    <ClCompile Include="water_bill.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
