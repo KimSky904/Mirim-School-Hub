@@ -21,5 +21,8 @@
     <ClCompile Include="counter_time.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="longest_worker.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

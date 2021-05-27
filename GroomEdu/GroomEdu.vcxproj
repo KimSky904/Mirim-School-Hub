@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="counter_time.c" />
+    <ClCompile Include="longest_worker.c" />
     <ClCompile Include="water_bill.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
