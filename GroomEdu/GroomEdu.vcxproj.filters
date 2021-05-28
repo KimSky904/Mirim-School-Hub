@@ -24,5 +24,11 @@
     <ClCompile Include="longest_worker.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="deal_papers.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="count_warm_days.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

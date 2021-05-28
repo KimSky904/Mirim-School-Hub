@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="counter_time.c" />
+    <ClCompile Include="count_warm_days.c" />
+    <ClCompile Include="deal_papers.c" />
     <ClCompile Include="longest_worker.c" />
     <ClCompile Include="water_bill.c" />
   </ItemGroup>
