@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="socks_pair.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="apple_boxes.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="card_score_game.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="change_empty_bottle.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

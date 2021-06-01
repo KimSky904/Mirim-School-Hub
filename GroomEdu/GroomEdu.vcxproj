@@ -20,9 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="apple_boxes.c" />
-    <ClCompile Include="card_score_game.c" />
-    <ClCompile Include="change_empty_bottle.c" />
-    <ClCompile Include="socks_pair.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
