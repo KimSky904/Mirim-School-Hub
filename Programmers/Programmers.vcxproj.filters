@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="count_primeNumber.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="internal_Multiplication.c">
+    <ClCompile Include="Lotto_highest_lowest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
