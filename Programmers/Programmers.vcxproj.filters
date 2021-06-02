@@ -18,5 +18,8 @@
     <ClCompile Include="Lotto_highest_lowest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Add_positive_negative_Integer.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

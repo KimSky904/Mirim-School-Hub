@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Add_positive_negative_Integer.c" />
     <ClCompile Include="Lotto_highest_lowest.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
