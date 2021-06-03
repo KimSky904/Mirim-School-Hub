@@ -21,5 +21,11 @@
     <ClCompile Include="Add_positive_negative_Integer.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="count_divisor_add.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Triad_and_reverse.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -20,7 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Add_positive_negative_Integer.c" />
+    <ClCompile Include="count_divisor_add.c" />
     <ClCompile Include="Lotto_highest_lowest.c" />
+    <ClCompile Include="Triad_and_reverse.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
