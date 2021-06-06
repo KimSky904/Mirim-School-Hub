@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="add_a_to_b.c" />
+    <ClCompile Include="middle_letter.c" />
     <ClCompile Include="PickAndAdd_2numbers_in_array.c" />
     <ClCompile Include="year_2016.c" />
   </ItemGroup>

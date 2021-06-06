@@ -21,5 +21,11 @@
     <ClCompile Include="year_2016.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="middle_letter.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="add_a_to_b.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
