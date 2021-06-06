@@ -27,5 +27,11 @@
     <ClCompile Include="add_a_to_b.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="string_descending_order.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="if_string_hasOnly_char.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
