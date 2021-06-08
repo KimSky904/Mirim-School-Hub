@@ -15,22 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PickAndAdd_2numbers_in_array.c">
+    <ClCompile Include="watermellon.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="year_2016.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="middle_letter.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="add_a_to_b.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="string_descending_order.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="if_string_hasOnly_char.c">
+    <ClCompile Include="change_string_to_int.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

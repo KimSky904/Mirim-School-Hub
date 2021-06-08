@@ -19,12 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="add_a_to_b.c" />
-    <ClCompile Include="if_string_hasOnly_char.c" />
-    <ClCompile Include="middle_letter.c" />
-    <ClCompile Include="PickAndAdd_2numbers_in_array.c" />
-    <ClCompile Include="string_descending_order.c" />
-    <ClCompile Include="year_2016.c" />
+    <ClCompile Include="change_string_to_int.c" />
+    <ClCompile Include="watermellon.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
