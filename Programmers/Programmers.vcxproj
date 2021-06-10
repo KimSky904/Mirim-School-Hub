@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="add_numberOf_cipher.c" />
     <ClCompile Include="change_string_to_int.c" />
+    <ClCompile Include="reverse_number_input_array.c" />
     <ClCompile Include="watermellon.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
