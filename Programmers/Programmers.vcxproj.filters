@@ -27,5 +27,8 @@
     <ClCompile Include="add_numberOf_cipher.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="add_aliquot.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
