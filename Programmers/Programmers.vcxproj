@@ -19,11 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="add_aliquot.c" />
-    <ClCompile Include="add_numberOf_cipher.c" />
-    <ClCompile Include="change_string_to_int.c" />
-    <ClCompile Include="reverse_number_input_array.c" />
-    <ClCompile Include="watermellon.c" />
+    <ClCompile Include="check_sqrt.c" />
+    <ClCompile Include="evenNum_oddNum.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
