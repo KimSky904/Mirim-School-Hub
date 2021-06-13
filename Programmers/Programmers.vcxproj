@@ -23,6 +23,7 @@
     <ClCompile Include="evenNum_oddNum.c" />
     <ClCompile Include="Harshad_number.c" />
     <ClCompile Include="hide_phone_number.c" />
+    <ClCompile Include="print_star.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
