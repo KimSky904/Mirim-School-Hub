@@ -1,0 +1,44 @@
+.book_list{
+    float :center;
+}
+.book{
+
+    width: 150px;
+    height: 225px;
+    background-color: white;
+    float :left;
+    margin: 45px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+.info{
+    
+}
+.info_in{
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.sub{
+    width: 150px;
+    height: 225px;
+}
+
+.name,
+.office{
+    list-style: none;
+    font-size: 12px;
+}
+.line{
+    color: black;
+    width: 100%;
+    
+}
+@media screen and (max-width: 768px){
+    .book{
+        width: 100px;
+        height: 150px;
+    }
+}
