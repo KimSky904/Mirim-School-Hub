@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="객체생성.cpp">
+    <ClCompile Include="스마트포인터.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="this화살표.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
