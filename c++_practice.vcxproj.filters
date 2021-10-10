@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="형변환.cpp">
+    <ClCompile Include="객체생성2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="점과화살표.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
