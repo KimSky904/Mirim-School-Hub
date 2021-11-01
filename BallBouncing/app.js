@@ -9,7 +9,7 @@ class App{
 
         document.body.appendChild(this.canvas);
 
-        window.addEventListener('resize',this.size.bind(this),false);
+        window.addEventListener('resize',this.resize.bind(this),false);
         this.resize();
 
         this.ball = new Ball(this.stageWidth,this.stageHeight,60,15);
@@ -19,7 +19,7 @@ class App{
 
     resize(){
         this.stageWidth = document.body.clientWidth;
-        this.stageHeight = document.body.clientHeight;
+        this.stageHeight = document.body.clientHeight;  
 
         this.canvas.width = this.canvas.stageWidth*2;
         this.canvas.height = this.canvas.stageHeight*2;
@@ -28,6 +28,8 @@ class App{
 
     animate(t) {
         window.requestAnimationFrame(this.animate.bind(this)); 
+
+        this.ctx.clearRect(0,0,this.stageWidth,this.stageHeight);
 
         this.ball.draw(this.ctx,this.stageWidth,this.stageHeight);
     }
