@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 문자열로 정의하는 방법 */
+        var stringMap = 
+            "00000n00000n00000";
+
+        var splitResult = stringMap.split('');
+        for(var i in splitResult){
+
+            if(i=='n') document.write('<br />');
+            document.write(splitResult[i]+"");
+        }
+        
+    
+    </script>
+</body>
+</html>

@@ -1,12 +1,15 @@
 var canvas = document.querySelector('canvas');
-canvas.width = window.innerWidth*0.5;
-canvas.height = canvas.width*7/12;
+canvas.width = window.innerWidth*0.3;
+canvas.height = canvas.width*9/12;
 
 var c = canvas.getContext('2d');
 
 
 //장애물 반지름 지정
-var radius = 30;
+var radius = 5;
+//장애물 너비, 높이
+var obstacleX = 10;
+var obstacleY = 10;
 
 function Circle(x, y){
     //x,y값 초기좌표
@@ -21,6 +24,8 @@ function Circle(x, y){
         console.log("draw func");
         c.beginPath();
         c.arc(this.x,100,radius,0,Math.PI*2,false);
+        c.fillStyle = 'blue';
+        c.fill();
         c.strokeStyle = 'black';
         c.stroke();
     }
@@ -34,7 +39,7 @@ function Circle(x, y){
     }
 }
 
-var circle = new Circle(200,200);
+var circle = new Circle(obstacleX,obstacleY);
 
 
 function animate(){
