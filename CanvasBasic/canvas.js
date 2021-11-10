@@ -40,6 +40,8 @@ function Circle(x, y){
 }
 
 var circle = new Circle(obstacleX,obstacleY);
+var circle = new Circle(20,20);
+var circle = new Circle(50,50);
 
 
 function animate(){
