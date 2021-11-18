@@ -142,7 +142,62 @@ select deptno from emp union all select deptno from emp;
 select deptno from dept minus select deptno from emp;
 
 
-//계층형 조회
+->계층형 조회
+//최대 계층 수
+select max(level) from emp start with mgr is null connect by prior empno = mgr;
+//계층구조 조회
+select level,empno,mgr,ename from emp start with mgr is null connect by prior empno = mgr;
+//(더 명확한 구조 조회) lpad를 통해 공백을 사용
+select level, lpad(' ',4*(level-1)) || empno,mgr,connect_by_isleaf from emp start with mgr is null connect by prior empno = mgr;
+
+
+
+
+//서브쿼리 -> select문 안에 select문
+//inline view -> from구 안 select 사용(가상의 뷰 만듬)
+select * from (select rownum num,ename from emp) a where num<5;
+//scala subquery -> select문에 subquery 사용
+select * from emp where deptno = (select deptno from dept where deptno = 10);
+
+
+//단일 행 서브쿼리
+//다중 행 서브쿼리 -> 서브쿼리 결과가 여러개의 행 반환
+//IN
+SELECT ENAME,DEPTNAME,SAL FROM EMP,DEPT WHERE EMP.DEPTNO = DEPT.DEPTNO AND EMP.EMPNO IN (SELECT EMPNO FROM EMP WHERE SAL > 2000);
+//ALL -> 20보다 작거나 크다 && 30보다 작거나 크다
+SELECT * FROM EMP WHERE DEPTNO <= ALL(20,30);
+//EXISTS
+SELECT ENAME,DEPTNAME,SAL FROM EMP,DEPT WHERE EMP.DEPTNO = DEPT.DEPTNO AND EXISTS (SELECT 1 FROM EMP WHERE SAL > 2000);
+//스칼라 서브쿼리 -> 한행과 한칼럼만 반환 (여러개면 오류)
+SELECT ENAME AS "이름", SAL AS "급여", (SELECT AVG(SAL) FROM EMP) AS "평균급여" FROM EMP WHERE EMPNO = 1000;
+//연관(CORRELATED) 서브쿼리
+SELECT * FROM EMP A WHERE A.DEPTNO = (SELECT DEPTNO FROM DEPT B WHERE B.DEPTNO = A.DEPTNO);
+
+
+
+//그룹 함수 (GROUP BY 순서상관 0)
+//ROLLUP -> GROUP BY칼럼에 대해 SUBTOTAL 만들어줌
+SELECT DEPTNO,JOB,SUM(SAL) FROM EMP GROUP BY ROLLUP(DEPTNO,JOB);
+SELECT DECODE(DEPTNO,NULL,'전체합계',DEPTNO), SUM(SAL) FROM EMP GROUP BY ROLLUP(DEPTNO);
+//그루핑 함수 -> ROLLUP,CUBE등의 함수에서 생성되는 합계값 구분, 계산되면 1반환
+SELECT DEPTNO,GROUPING(DEPTNO),JOB,GROUPING(JOB),SUM(SAL) FROM EMP GROUP BY ROLLUP(DEPTNO,JOB);
+SELECT DEPTNO,DECODE(GROUPING(DEPTNO),1,'전체합계') TOT,JOB,DECODE(GROUPING(JOB),1,'부서합계') T_DEPT, SUM(SAL) FROM EMP GROUP BY ROLLUP(DEPTNO,JOB);
+//그루핑 SETS 함수 (GROUP BY 순서상관 X) 각 그룹계산 따로 함
+SELECT DEPTNO,JOB,SUM(SAL) FROM EMP GROUP BY GROUPING SETS(DEPTNO,JOB);
+//CUBE 함수 -> 조합가능한 모든 전체합계 조회됨
+SELECT DEPTNO,JOB,SUM(SAL) FROM EMP GROUP BY CUBE(DEPTNO,JOB);
+
+
+//WINDOW 함수
+
+
+
+
+
+
+
+
+
 
 
 
