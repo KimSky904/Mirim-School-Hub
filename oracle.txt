@@ -1,0 +1,155 @@
+sys /as sysdba
+mirim
+
+
+SID확인 : select instance from v$thread;
+DB이름 확인 : select name,db_unique_name from v$database;
+포트확인 :  select dbms_xdb.gethttpport() from dual;
+포트변경 :  exec dbms_xdb.sethttpport(변경할 숫자);
+
+
+
+cmd에서 확인
+lsnrctl status : 리스너 상태확인
+lsnrctl stop : 리스너 중지
+lsnrctl start : 리스너 시작
+
+
+
+101,'김하늘',2000,'1001',sysdate,18
+
+DESC EMP;
+SELECT * FROM EMP;
+
+-> DDL
+CREATE TABLE EMP ();
+//테이블 변경
+ALTER TABLE EMP RENAME TO NEW_EMP;
+ALTER TABLE EMP ADD (age number(2) default 1);
+ALTER TABLE EMP MODIFY (ename varchar2(40) not null);
+ALTER TABLE EMP DROP COLUMN age;
+ALTER TABLE EMP RENAME COLUMN ename TO new_ename;
+ALTER TABLE DEPT NOLOGGING; // BUFFER CACHE 메모리 영역을 생략하고 기록
+
+//테이블 삭제
+DROP TABLE EMP:
+DROP TABLE EMP CASCADE CONSTRAINT;
+
+//뷰 생성과 삭제
+CREATE VIEW T_EMP AS SELECT * FROM EMP:
+SELECT * FROM T_EMP;
+DROP VIEW T_EMP;
+
+
+
+-> DML(DATA MANIPULATION LANGUAGE)
+INSERT INTO EMP(EMPNO,ENAME) VALUES(1000,'임베스트');
+INSERT INTO EMP VALUES(......); //데이터 파일에 바로 저장하려면 TCL의 COMMIT 사용필요
+INSERT INTO NEW_DEPT SELECT * FROM DEPT;
+
+UPDATE EMP SET ENAME='조조' WHERE EMPNO=100;
+DELETE FROM EMP WHERE EMPNO = 100;
+DELETE FROM EMP; // 테이블 용량은 초기화되지 않음
+TRUNCATE TABLE EMP; //테이블 용량도 초기화
+
+SELECT * FROM EMP WHERE 사원번호 = 1000;
+SELECT ENAME || '님' FROM EMP;
+SELECT * FROM NEW_EMP ORDER BY NEW_ENAME DESC;
+SELECT * FROM NEW_EMP ORDER BY NEW_ENAME, SAL DESC;
+SELECT /*+INDEX_DESC(A) */ * FROM NEW_EMP; //인덱스 힌트를 사용한 정렬회피 -> 정렬없이 거꾸로 읽음
+SELECT DEPTNO FROM EMP ORDER BY DEPTNO;
+SELECT DISTINCT DEPTNO FROM NEW_EMP ORDER BY DEPTNO; //중복방지
+SELECT ENAME AS "이름" FROM EMP a WHERE a.EMPNO = 1000;
+
+SELECT * FROM EMP WHERE EMPNO=101 AND SAL>=1000;
+SELECT * FROM DEPT WHERE DEPTNAME LIKE '영%';
+SELECT * FROM EMP WHERE ENAME LIKE '조_'; //숫자도 따옴표 안에 넣어서 사용가능
+SELECT * FROM DEPT WHERE DEPTNO LIKE 1000;
+SELECT * FROM DEPT WHERE DEPTNO BETWEEN 1000 AND 2000;
+
+SELECT * FROM NEW_EMP WHERE AGE IN (18,19,20);
+SELECT * FROM NEW_EMP WHERE (EMPNO,AGE) IN ((100,18),(100,20));
+SELECT * FROM EMP WHERE MGR IS NULL;
+SELECT * FROM EMP WHERE MGR IS NOT NULL;
+//NULL 관련 함수
+NVL(MGR,1) -> MGR칼럼이 NULL이면 0으로 바꿈
+NVL2(MGR,1,0) -> MGR칼럼이 NULL아니면 1, NULL이면 0 반환
+NULLIF(A,B) -> A와 B 같으면 NULL반환, 같지않으면 A반환
+COALESCE(A1,A2,A3,A4,A5...) -> 순서대로 NULL아닌거만나면 반환
+
+
+//GROUP BY
+SELECT DEPTNO,SUM(SAL) FROM EMP GROUP BY DEPTNO;
+SELECT DEPTNO,SUM(SAL) FROM NEW_EMP GROUP BY DEPTNO HAVING SUM(SAL) > 100;
+SELECT DEPTNO,COUNT(DEPTNO) FROM NEW_EMP GROUP BY DEPTNO HAVING SUM(SAL) > 100;
++) MAX,MIN,AVG,STDDEV(표준편차),VARIAN(분산)
+COUNT(*) -> NULL포함
+COUNT(칼럼명) -> NULL 제외
+
+//SELECT문 실행순서
+FROM - WHERE - GROUP BY - HAVING - SELECT - ORDER BY
+
+//내장형 함수
+-
+
+
+//ROWNUM
+SELECT * FROM NEW_EMP WHERE ROWNUM<=1;
+SELECT * FROM (SELECT ROWNUM LIST,NEW_ENAME FROM NEW_EMP) WHERE LIST<=2;
+SELECT * FROM (SELECT ROWNUM LIST,NEW_ENAME FROM NEW_EMP) WHERE ROWNUM<=2;
+
+
+//WITH
+WITH QUIZ AS (SELECT*FROM NEW_EMP WHERE DEPTNO=1001)  SELECT * FROM QUIZ;
+WITH VIEWDATA AS (SELECT * FROM NEW_EMP UNION ALL SELECT*FROM NEW_EMP) SELECT * FROM VIEWDATA WHERE EMPNO = 1000;
+
+
+
+//DCL
+GRANT SELECT,INSERT,UPDATE,DELETE ON NEW_EMP TO TESTER;
+WITH GRANT OPTION -> 다른사람에게 권한을 주는 권한, 전체권한회수가능
+WITH ADMIN OPTION -> 테이블에대한 모든 권한, 전체권한회수불가
+REVOKE INSERT ON EMP FROM TESTER; -> INSERT에 대한 TESTER의 권한 회수
+
+
+//TCL
+COMMIT; -> 변경한 데이터 데이터베이스에 반영 (DDL,DCL 자동COMMI됨)
+ROLLBACK; -> 변경된 사항 취소
+SAVEPOINT T1;
+ROLLBACK TO T1;
+
+
+ALTER TABLE EMP ADD CONSTRAINT FK_DEPT FOREIGN KEY (DEPTNO) REFRENCES DEPT(DEPTNO)
+
+//equi join
+select deptno from emp intersect select deptno from dept;
+//inner join
+select * from emp inner join dept on emp.deptno = dept.deptno;
+//outer join
+select * from dept,emp where emp.deptno (+)= dept.deptno;
+//left outer join
+select * from dept left outer join emp on emp.deptno = dept.deptno;
+//right outer join
+select * from dept left outer join emp on emp.deptno = dept.deptno;
+//cross join -> 조건없음(카테시안 곱)
+select * from emp cross join dept;
+
+//union -> 두개의 테이블을 하나로, 모든형식 일치해야함, 정렬통한 중복제거
+select deptno from emp union select deptno from emp;
+//union all -> 두개의 테이블을 하나로, 중복제거+정렬 없음
+select deptno from emp union all select deptno from emp;
+//minus -> 차집합, 먼저쓴select엔 있고 뒤에는 없는것
+select deptno from dept minus select deptno from emp;
+
+
+//계층형 조회
+
+
+
+
+
+
+
+
+
+
