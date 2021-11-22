@@ -1,0 +1,28 @@
+//equi join
+select deptno from emp intersect select deptno from dept;
+//inner join
+select * from emp inner join dept on emp.deptno = dept.deptno;
+//outer join
+select * from dept,emp where emp.deptno (+)= dept.deptno;
+//left outer join
+select * from dept left outer join emp on emp.deptno = dept.deptno;
+//right outer join
+select * from dept left outer join emp on emp.deptno = dept.deptno;
+//cross join -> 조건없음(카테시안 곱)
+select * from emp cross join dept;
+
+//union -> 두개의 테이블을 하나로, 모든형식 일치해야함, 정렬통한 중복제거
+select deptno from emp union select deptno from emp;
+//union all -> 두개의 테이블을 하나로, 중복제거+정렬 없음
+select deptno from emp union all select deptno from emp;
+//minus -> 차집합, 먼저쓴select엔 있고 뒤에는 없는것
+select deptno from dept minus select deptno from emp;
+
+
+->계층형 조회
+//최대 계층 수
+select max(level) from emp start with mgr is null connect by prior empno = mgr;
+//계층구조 조회
+select level,empno,mgr,ename from emp start with mgr is null connect by prior empno = mgr;
+//(더 명확한 구조 조회) lpad를 통해 공백을 사용
+select level, lpad(' ',4*(level-1)) || empno,mgr,connect_by_isleaf from emp start with mgr is null connect by prior empno = mgr;
