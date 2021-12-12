@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="선택정렬.cpp">
+    <ClCompile Include="개선_버블정렬.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
