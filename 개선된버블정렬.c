@@ -1,6 +1,7 @@
 #include<stdio.h>
 void BubbleSort(int a[], int n) {
-	int i = 0, j, temp, flag = 1;
+	int i=0, j, temp,flag=1;
+
 	while (flag == 1) {
 		flag = 0;
 		i++;
@@ -14,14 +15,14 @@ void BubbleSort(int a[], int n) {
 		}
 	}
 }
-
 int main() {
-	int a[] = { 10,5,7,12,9,16,1,3 };
+	int a[] = { 17,8,20,11,5,12,15,7 };
 	int i, n = sizeof(a) / sizeof(int);
 
 	printf("정렬 전 : ");
 	for (i = 0; i < n; i++) printf("%d  ", a[i]);
 	BubbleSort(a, n);
-	printf("\n정렬 후 : ");
+	printf("\n개선된 버블 정렬 후 : ");
 	for (i = 0; i < n; i++) printf("%d  ", a[i]);
+	return 0;
 }

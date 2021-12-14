@@ -1,6 +1,7 @@
 #include<stdio.h>
 void SelectionSort(int a[], int n) {
 	int i, j, min, index;
+
 	for (i = 0; i < n - 1; i++) {
 		min = a[i];
 		index = i;
@@ -14,13 +15,12 @@ void SelectionSort(int a[], int n) {
 		a[i] = min;
 	}
 }
-int main() {
+int main(void) {
 	int a[] = { 10,5,7,12,9,16,1,3 };
 	int i, n = sizeof(a) / sizeof(int);
-
 	printf("정렬 전 : ");
-	for (i = 0; i < n; i++) printf("%d  ", a[i]);
 	SelectionSort(a, n);
-	printf("\n정렬 후 : ");
+	printf("\n선택 정렬 후 : ");
 	for (i = 0; i < n; i++) printf("%d  ", a[i]);
+	return 0;
 }
