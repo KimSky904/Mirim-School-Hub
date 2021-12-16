@@ -1,7 +1,7 @@
 #include<vector>
 #include<iostream>
 #include<algorithm>
-
+#include<string>
 #include<fstream>
 #include<iomanip> //setw(10)
 using namespace std;
@@ -33,10 +33,16 @@ int main() {
 
 	//삽입
 	v.insert(v.begin() + 2, v.begin() + 1, v.begin() + 3); //v의 3번째 자리에 v의 두번째부터 4-1번째 값을 집어넣음
+	v.insert(v.begin() + 2, 4, 50); //v[2]부터 50을 4개 삽입
 	//삭제
+	v.erase(v.begin());
 	v.erase(v.begin() + 1, v.begin() + 4); //v의 두번째부터 5-1번째 값을 지움
 	//3번째 값 변경
 	v.at(2) = 500;
+	//지정
+	v.assign(3, 7); //7 3개 추가
+	//복사
+	const auto v2 = v;
 
 
 
@@ -83,6 +89,12 @@ int main() {
 		cout << "문자열 출력 : " << addr << endl;
 		cout << "문자열 입력 : ";
 	}
+	ifstream input("input.txt");
+	string line;
+	while (!input.eof()) {
+		getline(input, line);
+		cout << "입력한 문장: " << line << endl;
+	}
 
 
 	//모드
@@ -127,9 +139,37 @@ int main() {
 
 
 	//랭킹
+	ifstream input("input.txt");
+	input.seekg(-1, ios::end);  //마지막 글자 출력
+	cout << (char)input.peek(); //char만큼의 문자 하나를 읽음
+	input.seekg(0, ios::beg);
+	cout << (char)input.get(); //읽고 포인터 이동
+	input.seekg(7, ios::cur);
+	input.seekg(5); //0 : 맨 앞으로, 5 -> 6번째값
+	ofstream output("output.txt");
+	cout << "현재 위치는 " << output.tellp() << "입니다." << endl; //input.seekg(0, ios::end); 로 총 글자수 알 수 있음
+	input.seekg(0, ios::end); //endoffile, 안나옴
+	cout << (char)input.get() << endl;
+	input.clear();
 
 
+
+	//알고리즘
+	string word;
+	reverse(word.begin(), word.end());
+	//셔플
+	int a[5] = { 1, 2, 3, 4, 5 };
+	int b[5] = { 6, 7, 8, 9, 10 };
+	random_shuffle(a, a + 5);
+	random_shuffle(b + 1, b + 4);
+	for_each(a, a + 5, print);
 }
 
+
+void print(int n) {
+
+	cout << n << endl;
+
+}
 
 
