@@ -4,9 +4,9 @@ public class Fibonacci {
 
 	public static void main(String[] args) {
 		//case 1
-				System.out.println(solution(3));
-				//case 2
-				System.out.println(solution(5));
+		System.out.println(solution(3));
+		//case 2
+		System.out.println(solution(5));
 	}
 	public static int solution(int n) {
 
