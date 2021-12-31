@@ -11,28 +11,28 @@ public class JadenCase {
 	public static String solution(String s) {
         String answer = "";
         
-        //¸ğµç ¹®ÀÚ ¼Ò¹®ÀÚ·Î º¯°æ ÈÄ ºĞ¸®
+        //ëª¨ë“  ë¬¸ì ì†Œë¬¸ìë¡œ ë³€ê²½ í›„ ë¶„ë¦¬
         String[] spaced = s.toLowerCase().split(" ");
  
         for (int i = 0; i < spaced.length; i++) {
-            //±âº» ¶ç¾î¾²±â Àû¿ë
+            //ê¸°ë³¸ ë„ì–´ì“°ê¸° ì ìš©
             if(i!=0) answer += " ";
-            //¶ç¾î¾²±âº° °¢ ´Ü¾î temp
+            //ë„ì–´ì“°ê¸°ë³„ ê° ë‹¨ì–´ temp
             String temp = spaced[i];
-            //¿¬¼ÓµÈ °ø¹éÀÏ°æ¿ì
+            //ì—°ì†ëœ ê³µë°±ì¼ê²½ìš°
             if ("".equals(temp)) { 
                 answer += temp;
             } 
-            //Ã¹¹®ÀÚ°¡ ¿µ´ë¼Ò¹®ÀÚÀÏ °æ¿ì ±ÔÄ¢Àû¿ë
+            //ì²«ë¬¸ìê°€ ì˜ëŒ€ì†Œë¬¸ìì¼ ê²½ìš° ê·œì¹™ì ìš©
             else if(spaced[i].charAt(0)>='A'&&spaced[i].charAt(0)<='z'){
                 answer += Character.toUpperCase(temp.charAt(0)) + temp.substring(1);
             } 
-            //Ã¹¹®ÀÚ°¡ ¿µ´ë¼Ò¹®ÀÚ°¡ ¾Æ´Ñ °æ¿ì(¼ıÀÚ)
+            //ì²«ë¬¸ìê°€ ì˜ëŒ€ì†Œë¬¸ìê°€ ì•„ë‹Œ ê²½ìš°(ìˆ«ì)
             else {
                 answer += temp;
             }
         }
-        //¸¶Áö¸· ¹®ÀÚ°¡ °ø¹éÀÏ°æ¿ì
+        //ë§ˆì§€ë§‰ ë¬¸ìê°€ ê³µë°±ì¼ê²½ìš°
         if (" ".equals(s.substring(s.length()-1))) 
             answer += " ";
  
