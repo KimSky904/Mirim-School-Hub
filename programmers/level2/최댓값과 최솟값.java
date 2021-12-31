@@ -11,13 +11,13 @@ public class MaxValue_MinValue {
 	public static String solution(String s) {
         String answer = "";
         
-        //ºĞÇÒ
+        //ÂºÃÃ‡Ã’
         String[] splited = s.split(" ");
         int[] numbers = new int[splited.length];
         for(int i=0;i<numbers.length;i++){
             numbers[i] = Integer.parseInt(splited[i]);
         }
-        //Á¤·Ä
+        //ÃÂ¤Â·Ã„
         for(int i=0;i<numbers.length;i++){
             int min = i;
             for(int j=i+1;j<numbers.length;j++){
