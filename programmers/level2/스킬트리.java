@@ -13,16 +13,16 @@ public class SkillTree {
         int skill_index = 0;
         boolean flag = false;
         
-        //ÇÊ¿äÇÑ ½ºÅ³ÀÇ °³¼ö¸¸Å­ÀÇ ¹è¿­
+        //í•„ìš”í•œ ìŠ¤í‚¬ì˜ ê°œìˆ˜ë§Œí¼ì˜ ë°°ì—´
         String[] neededSkill = new String[skill.length()];
         neededSkill = skill.split(""); //C B D
         
-        //´Ü¾îº°
+        //ë‹¨ì–´ë³„
         for(int i=0;i<skill_trees.length;i++){
             skill_index = 0;
             flag = false;
             String temp = skill_trees[i];
-            //±ÛÀÚº°
+            //ê¸€ìë³„
             for(int j=0;j<temp.length();j++){ //BACDE
                 if(skill_index<skill.indexOf(temp.charAt(j))){
                     flag = false;
