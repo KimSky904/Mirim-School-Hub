@@ -1,3 +1,4 @@
+package Set01;
 class Solution {
     public String func_a(String str, int len){
         String padZero = "";
