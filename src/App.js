@@ -13,4 +13,17 @@ function App() {
   );
 }
 
+/**
+ * 
+ * <TopBar/>
+ * <Write/>
+ * <Header/>
+ * <Post/>
+ * <Posts/>
+ * <Sidebar/>
+ * <SinglePost/>
+ * <TopBar/> 
+ * 
+ */
+
 export default App;
