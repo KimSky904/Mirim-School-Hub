@@ -3,7 +3,8 @@
 
 // import './school-test/HelloWorld'
 
-import './component-basic/props-basic'
+//import './component-basic/props-basic'
+import './component-basic/props-children'
 
 
 
