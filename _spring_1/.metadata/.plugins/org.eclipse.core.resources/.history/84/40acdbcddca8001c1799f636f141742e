@@ -1,0 +1,8 @@
+package kr.hs.study.beans;
+
+public class TestBean3 {
+	private DataBean3 data6;
+	private DataBean3 data7;
+	private DataBean3 data8;
+	
+}

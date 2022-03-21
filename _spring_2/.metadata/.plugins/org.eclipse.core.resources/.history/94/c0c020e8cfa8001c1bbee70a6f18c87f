@@ -1,0 +1,7 @@
+package kr.hs.study.beans;
+
+public class TestBean {
+	private int a;
+	private double b;
+	private String c;
+}

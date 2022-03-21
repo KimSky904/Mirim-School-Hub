@@ -1,0 +1,14 @@
+package kr.hs.study.beans;
+
+public class TestBean2 {
+	private int data1;
+	private double data2;
+	private DataBean2 data3;
+	private DataBean2 data4;
+	
+	
+	public TestBean2(int data1,double data2,DataBean2 data3,DataBean2 data4) {
+		
+	}
+	
+}

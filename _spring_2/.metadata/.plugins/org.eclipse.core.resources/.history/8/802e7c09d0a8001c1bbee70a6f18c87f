@@ -1,0 +1,18 @@
+package kr.hs.study.beans;
+
+public class TestBean {
+	private int a;
+	private double b;
+	private String c;
+	private DataBean d;
+	
+	public TestBean(){
+		System.out.println("TestBean 기본 생성자");
+	}
+	public void Print() {
+		System.out.println("a : "+a);
+		System.out.println("a : "+b);
+		System.out.println("a : "+c);
+	}
+	
+}
