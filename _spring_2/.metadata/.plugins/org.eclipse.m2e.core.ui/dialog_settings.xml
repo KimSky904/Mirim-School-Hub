@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SpringHub\_spring_2\EmployeeProject\src\main\java\kr\hs\study\config\config.xml"/>
 			<item value="C:\_spring_2\SetterDIPrj\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -49,6 +50,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="BookProject"/>
+			<item value="EmployeeProject"/>
+			<item value="XMLConfiguration"/>
 			<item value="AutoDI"/>
 			<item value="SetterDIPrj"/>
 			<item value="Spring2"/>

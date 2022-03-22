@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	        
+     <bean class="kr.hs.study.beans.novel" id="b1">
+     	<property name="writerName" value="kim"></property>
+     	<property name="bookName" value="spring"></property>
+     	<property name="price" value="8000"></property>
+     </bean>
+     
+     <bean class="kr.hs.study.beans.poet" id="b2">
+     	<property name="writerName" value="lee"></property>
+     	<property name="bookName" value="spring2"></property>
+     	<property name="price" value="10000"></property>
+     </bean>
+	        
+     <bean class="kr.hs.study.beans.magazine" id="b3">
+     	<property name="writerName" value="park"></property>
+     	<property name="bookName" value="spring3"></property>
+     	<property name="price" value="20000"></property>
+     </bean>
+	         
+</beans>

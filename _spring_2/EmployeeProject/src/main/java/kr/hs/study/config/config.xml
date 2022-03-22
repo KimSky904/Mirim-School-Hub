@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	        
+     <bean class="kr.hs.study.beans.Designer" id="designer">
+     	<property name="name" value="디자이너"/>
+     	<property name="time_checkin" value="7"/>
+     	<property name="time_checkout" value="10"/>
+     </bean>
+     <bean class="kr.hs.study.beans.Publisher" id="publisher">
+        <property name="name" value="퍼블리셔"/>
+     	<property name="time_checkin" value="11"/>
+     	<property name="time_checkout" value="6"/>
+   	 </bean>
+     <bean class="kr.hs.study.beans.Developer" id="developer">
+     	<property name="name" value="개발자"/>
+     	<property name="time_checkin" value="10"/>
+     	<property name="time_checkout" value="7"/>
+     </bean>
+	         
+</beans>
