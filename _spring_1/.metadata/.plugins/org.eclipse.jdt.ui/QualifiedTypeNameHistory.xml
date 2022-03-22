@@ -12,7 +12,12 @@
     <fullyQualifiedTypeName name="kr.hs.beans.TestBean"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Annotation"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfigClass"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 </qualifiedTypeNameHistroy>
