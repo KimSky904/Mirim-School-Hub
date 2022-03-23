@@ -51,6 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="JavaDI"/>
 			<item value="JavaConfiguration"/>
 			<item value="AutoDI"/>
 			<item value="SetterDI"/>

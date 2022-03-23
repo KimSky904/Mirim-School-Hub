@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Person"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.Employee"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.Book"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.magazine"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.poet"/>
@@ -14,4 +11,7 @@
     <fullyQualifiedTypeName name="kr.hs.study.beans.Developer"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Flow.Publisher"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Publisher"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Book"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Employee"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
 </qualifiedTypeNameHistroy>

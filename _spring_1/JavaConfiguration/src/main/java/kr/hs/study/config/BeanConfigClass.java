@@ -2,8 +2,11 @@ package kr.hs.study.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 
 import kr.hs.study.beans.TestBean1;
+import kr.hs.study.beans.TestBean2;
 
 @Configuration //자바로 객체를 생성하라고 명령하는 설정파일임
 public class BeanConfigClass {
@@ -25,7 +28,12 @@ public class BeanConfigClass {
 		return new TestBean1();
 	}
 	
-	
+	@Bean(name="test")
+	@Lazy
+	@Scope("prototype")
+	public TestBean2 java4() {
+		return new TestBean2();
+	}
 	
 
 }

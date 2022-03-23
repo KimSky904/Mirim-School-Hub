@@ -11,5 +11,5 @@
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 	        
      <bean class="kr.hs.study.beans.TestBean1" id="t1" lazy-init="true" scope="prototype"/>  
-	         
+	 <bean class="kr.hs.study.beans.TestBean2" id="t2" lazy-init="true" scope="prototype"/>         
 </beans>
