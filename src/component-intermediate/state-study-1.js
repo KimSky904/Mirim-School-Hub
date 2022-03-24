@@ -10,6 +10,8 @@ const Counter = function(props) {
         <div>
             <h1>{count}</h1>
             <button onClick={() => setCount(count+1)} style={{background:'lightyellow'}}>  PLUS</button>
+            <h1>{count}</h1>
+            <button onClick={() => setCount(provious => provious+1)} style={{background:'lightyellow'}}>  PLUS</button>
             <h1>{text}</h1>
             <button onClick={() => setText(text+"a")} style={{background:'lightgreen'}}>  ADD</button>
         </div>
@@ -92,4 +94,4 @@ const StateDemoComponent2 =function(props) {
         </div>    
         )}
 
-ReactDOM.render(<Testing/>, document.getElementById('root')) 
+ReactDOM.render(<Counter/>, document.getElementById('root')) 
