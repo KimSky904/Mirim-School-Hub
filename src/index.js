@@ -9,8 +9,8 @@
 // import './use-state-demo/counter-with-hook-caveat'
 // import './component-intermediate/counter-demo'
 // import './component-intermediate/lst-demo'
-import './component-intermediate/manipulate-list'
-
+// import './component-intermediate/manipulate-list'
+import './component-intermediate/todo-app-demo'
 
 
 

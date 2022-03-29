@@ -30,7 +30,7 @@ const ListComponent = function(props) {
     const handleRemoveItem = (uuid) => setList(state => state.filter((item) => item.id !== uuid))
     // update (map)
     // id가 일치할 경우 수정된 객체를 반환
-    const handleUpdateItem = (uuid, updated) => setList(state => state.map(item => (item.id === uuid) ? updated : item))
+    const handleUpdateItem = (uuid, updated) => setList(state => state.map(item => (item.id === uuid) ? updated : item                  ,))
 
     return (
         <div>
@@ -50,3 +50,8 @@ const ListComponent = function(props) {
 }
 
 ReactDOM.render(<ListComponent />, document.getElementById("root"))
+
+/*
+            <div>{importance}</div>
+
+*/
