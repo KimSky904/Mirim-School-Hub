@@ -10,10 +10,10 @@
 // import './component-intermediate/counter-demo'
 // import './component-intermediate/lst-demo'
 // import './component-intermediate/manipulate-list'
-import './component-intermediate/todo-app-demo'
-
-
-
+// import './component-intermediate/todo-app-demo'
+// import './use-effect-demo/use-effect-intro'
+// import './use-effect-demo/use-effect-deps'
+import './use-effect-demo/use-effect-using-local-storage'
 
 // 1주차
 /*
@@ -88,4 +88,33 @@ setCount(count+1) 보단 setCount(provious => provious+1)의 형태를 사용하
 따라서 onClick={() => funcName(parameter)}로 작성해야 정상작동이 된다.
 
 
+
+
+[0331 / 단방향 데이터 흐름]
+부모 컴포넌트가 변경되는 경우에 자식 컴포넌트도 모두 re-render가 발생
+상태 끌어올리기 -> 특정 상태값을 여러 컴포넌트에서 사용해야하는 경우 그 컴포넌트들의 가장 가까운 공통 조상 컴포넌트에 상태를 배치하는 전략
+
+
+
+> 메인 이펙트 : 상태관리 및 상태변환에 따르는 뷰를 구성하는것 (컴포넌트 구성 과정)
+> 사이드 이펙트
+ : 그 외의 작업 (네트워크 통신, 타이머 설정, 로컬 스토리지 사용, DOM API 활용 ...)
+ : useEffect 훅을 사용 -> 부작용(side-effect)에 해당하는 작업을 수행할 때 사용
+ : 정리가 필요한 side-effect(타이머,,)와 정리가 필요없는 side-effect(네트워크,,) 구분 필요
+
+side-effect는 re-render(렌더링) 이후에 호출된다.
+
+re-render이 발생하는 경우
+-> state값의 변경
+-> props(상위 컴포넌트의 값)의 변경
+
+> 의존 배열
+* use-effect-demo/use-effect-deps.js에서 useEffect의 두번째 인자값에 따른 차이점 살펴보기
+
+
+
+
 */
+
+
+
