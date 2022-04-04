@@ -9,6 +9,7 @@ import kr.hs.study.beans.TestBean1;
 import kr.hs.study.beans.TestBean2;
 
 @Configuration //자바로 객체를 생성하라고 명령하는 설정파일임
+// 여러개의 자바파일중 설정파일임을 명시
 public class BeanConfigClass {
 	
 	//<bean class="kr.hs.study.beans.TestBean1" id="t1"/>

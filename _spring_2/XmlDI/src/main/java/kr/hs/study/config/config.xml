@@ -10,5 +10,19 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 	     
+	 
+	 <bean id="d1" class="kr.hs.study.beans.DataBean1" lazy-init="true" scope="prototype"/>    
+     <bean id="t1" class="kr.hs.study.beans.TestBean1">
+     	<constructor-arg value="100" type="int" index="0"/>
+     	<constructor-arg value="spring1" type="java.lang.String" index="1"/>
+		<constructor-arg ref="d1" type="DataBean1" index="2"/>
+     </bean>
+     
+     
+     <bean id="t2" class="kr.hs.study.beans.TestBean1">
+     	<property name="data1" value="300"/>
+     	<property name="data2" value="spring2"/>
+     	<property name="data3" ref="d1"/>
+   	 </bean>
 	         
 </beans>
