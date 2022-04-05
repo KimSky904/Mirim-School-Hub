@@ -51,6 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AnnotationBean"/>
 			<item value="ArtProject"/>
 			<item value="JavaDI"/>
 			<item value="JavaConfiguration"/>
