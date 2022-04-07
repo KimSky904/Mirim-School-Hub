@@ -18,7 +18,14 @@
 // import './use-effect-demo/use-effect-unmount-deps'
 // import './use-effect-demo/use-effect-with-dom'
 // import './use-effect-demo/timer-demo'
-import './school-test/click-game'
+// import './school-test/click-game'
+// import './use-effect-demo/use-effect-fetch-api'
+// import './component-advanced/ref-demo'
+// import './component-advanced/controlled-component'
+// import './component-advanced/reservation-form'
+// import './component-advanced/uncontrolled-component'
+import './use-ref-demo/use-ref-practice-form'
+
 
 // 1주차
 /*
@@ -117,6 +124,25 @@ re-render이 발생하는 경우
 * use-effect-demo/use-effect-deps.js에서 useEffect의 두번째 인자값에 따른 차이점 살펴보기
 
 
+
+[0407 / 통신]
+fetch('url')을 통해 http통신이 이루어지면
+promise객체를 반환,
+.then(함수)를 통해 json으로 변환, json도 마찬가지로 promise 객체를 반환하므로 다시 .then()메서드를 사용하여 이후 작업 진행
+
+useRef훅
+> 값이 변경되어도 re-render를 하지 않기 때문에 내부적으로 필요한 임의의 값을 저장할 때 사용
+(useState는 값이 변경되면 해당 컴포넌트를 다시 불러오기 때문에(re-render) 차이가 있음)
+보통 dom요소(input,canvas..)를 저장하는 데에 사용
+> 사용방법
+const inputEl = useRef() -> 선언
+<input type='text' ref={inputEl} /> -> 연결
+
+Controlled (권장)
+> dom의 상태와 react(상태관리자)의 상태를 동기화
+
+UnControlled
+> 파일저장과 같은 작업시 uncontrolled작업이 필수
 
 
 */
