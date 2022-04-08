@@ -58,8 +58,8 @@ SELECT to_char(sysdate,'YY/MM/DD HH24:MI:SS') normal, --오늘 날짜를 해당 
     from dual;
     
     
-SELECT hiredate, ROUND(hiredate,'MONTH'), --입사이자의 이자가 15이상이면 반오ㅣㅁ 되고
-    --입사이자의 워이 6워 이상이면 그 다음 연도 1워 1이이 추ㅕㄱ
+SELECT hiredate, ROUND(hiredate,'MONTH'), --입사이자의 이자가 16이상이면 반오ㅣㅁ 되고
+    --입사이자의 워이 7워 이상이면 그 다음 연도 1워 1이이 추ㅕㄱ
     ROUND(hiredate,'YEAR') 
     from emp;    
     
