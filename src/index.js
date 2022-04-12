@@ -24,7 +24,10 @@
 // import './component-advanced/controlled-component'
 // import './component-advanced/reservation-form'
 // import './component-advanced/uncontrolled-component'
-import './use-ref-demo/use-ref-practice-form'
+// import './use-ref-demo/use-ref-practice-form'
+// import './school-test/news-page'
+// import './component-advanced/use-context-using-user-context'
+import './component-advanced/context-api-theme-context'
 
 
 // 1주차
