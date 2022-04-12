@@ -51,6 +51,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ComponentDI"/>
+			<item value="Component"/>
 			<item value="JSR250"/>
 			<item value="AutowireBeanTest"/>
 			<item value="AnnotationBean"/>
