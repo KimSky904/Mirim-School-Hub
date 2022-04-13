@@ -51,6 +51,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="PersonComponent"/>
+			<item value="ComponentAutowired"/>
 			<item value="ComponentDI"/>
 			<item value="Component"/>
 			<item value="JSR250"/>
@@ -64,8 +66,6 @@
 			<item value="ConstructorDI"/>
 			<item value="SpringLifecycle"/>
 			<item value="HelloProject"/>
-			<item value="SpringBeans"/>
-			<item value="SpringBasic"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
