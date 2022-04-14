@@ -27,7 +27,10 @@
 // import './use-ref-demo/use-ref-practice-form'
 // import './school-test/news-page'
 // import './component-advanced/use-context-using-user-context'
-import './component-advanced/context-api-theme-context'
+// import './component-advanced/context-api-theme-context'
+// import './component-advanced/fake-login'
+// import './school-test/fake-login-custom'
+import './school-test/github-repo-search'
 
 
 // 1주차
