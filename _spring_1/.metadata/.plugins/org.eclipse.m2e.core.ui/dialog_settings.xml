@@ -51,6 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AOP"/>
 			<item value="PersonComponent"/>
 			<item value="ComponentAutowired"/>
 			<item value="ComponentDI"/>
@@ -65,7 +66,6 @@
 			<item value="SetterDI"/>
 			<item value="ConstructorDI"/>
 			<item value="SpringLifecycle"/>
-			<item value="HelloProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

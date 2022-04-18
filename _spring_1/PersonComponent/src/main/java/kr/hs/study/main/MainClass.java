@@ -11,8 +11,9 @@ public class MainClass {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanConfigClass.class);
 		TestBean t1 = ctx.getBean(TestBean.class);
 		System.out.println("1. 이름 : "+t1.getP1().getName()+", 나이 : "+t1.getP1().getAge());
-		System.out.println("2. 이름 : "+t1.getP2().getName()+", 나이 : "+t1.getP2().getAge());
+		TestBean t2 = ctx.getBean(TestBean.class);
+		System.out.println("2. 이름 : "+t2.getP2().getName()+", 나이 : "+t2.getP2().getAge());
 		
-		ctx.close();
+		ctx.close(); 
 	}
 }
