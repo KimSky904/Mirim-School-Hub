@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\SpringHub\_spring_1\AOP\pom.xml"/>
 			<item value="C:\_spring_1\JavaBasic"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -51,6 +52,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Execution"/>
 			<item value="AOP"/>
 			<item value="PersonComponent"/>
 			<item value="ComponentAutowired"/>
@@ -65,7 +67,6 @@
 			<item value="AutoDI"/>
 			<item value="SetterDI"/>
 			<item value="ConstructorDI"/>
-			<item value="SpringLifecycle"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
