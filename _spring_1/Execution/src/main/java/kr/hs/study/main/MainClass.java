@@ -17,11 +17,13 @@ public class MainClass {
 		t1.method1("spring 5");
 		t1.method1(2,40);
 		t1.method1(1,"twh");
+		t1.method3();
 		t1.method2();
 		TestBean2 t2 = ctx.getBean(TestBean2.class);
 		t2.method1();
 		TestBean3 t3 = ctx.getBean(TestBean3.class);
 		t3.method1();
+		
 		
 		
 		ctx.close();

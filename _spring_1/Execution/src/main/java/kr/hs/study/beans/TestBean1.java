@@ -19,6 +19,10 @@ public class TestBean1 {
 	public void method1(String a,String b) {
 		System.out.println("String, String method1 호출, "+a+" "+b);
 	}
+	public int method3() {
+		System.out.println("int return method1 호출");
+		return 1;
+	}
 	public void method2() {
 		System.out.println("method2 호출");
 	}
