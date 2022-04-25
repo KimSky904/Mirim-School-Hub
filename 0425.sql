@@ -1,6 +1,6 @@
--- 0425
+-- 0425 (교과서 80p)
 
--- 예제 1(80p)
+-- 예제 1
 -- sal+comm에서 comm이 NULL이면 결과는 NULL이 된다.
 -- 이에 대비하기 위해 NVL을 사용하여 comm이 NULL일 경우 0으로 치환
 select ename, sal, sal+comm, sal+NVL(comm,0)
