@@ -37,11 +37,13 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
-    <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.PrintMsg"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.IPrintMsg"/>
 </qualifiedTypeNameHistroy>

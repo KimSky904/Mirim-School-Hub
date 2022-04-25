@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Person"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.magazine"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.poet"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.novel"/>
@@ -14,7 +13,6 @@
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean1"/>
@@ -24,4 +22,7 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 </qualifiedTypeNameHistroy>
