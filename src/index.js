@@ -30,7 +30,19 @@
 // import './component-advanced/context-api-theme-context'
 // import './component-advanced/fake-login'
 // import './school-test/fake-login-custom'
-import './school-test/github-repo-search'
+// import './school-test/github-repo-search'
+// import './component-styling/using-css'
+// import './component-styling/using-css-module'
+// import './component-styling/using-sass'
+// import './component-styling/using-styled-components'
+// import './component-styling/using-svg'
+// import './component-styling/using-react-icons'
+import './use-reducer-demo/use-reducer-counter-1'
+
+
+
+
+
 
 
 // 1주차
@@ -149,6 +161,37 @@ Controlled (권장)
 
 UnControlled
 > 파일저장과 같은 작업시 uncontrolled작업이 필수
+
+
+
+
+
+
+
+[0426 / CSS 모듈 불러오기]
+
+특정 컴포넌트에 종속된 스타일을 적용해야 할 때 사용
+CSS의 파일의 이름을 "컴포넌트이름.module.css"로 명명
+CSS 파일의 이름이 ".module.css"로 끝나면 선택자 정보를 이용하여 내부적으로 고유한 클래스 이름을 부여
+import 명령어로 모듈을 불러올 때 스타일과 관련된 정보가 담긴 객체로 불러옴
+
+id값과 클래스 이름이 자동으로 css모듈의 속성명이 됨
+
+import buttonStyle from './MyButton.module.css'를 넣을 경우
+<style></style>코드를 자동으로 적용-생성함
+요소의 className의 값으로 적용하고싶은 스타일을 지정
+예시 ) <button className={`${buttonStyle.font}`}></button>
++ ) 클래스 이름을 쉽게 적용하는 모듈 -> npm install classnames
+
+SASS : .scss를 .css로 변환하는 것
+
+styled를 사용해서 style를 적용할 때, 특정 클래스를 불러와야 할 경우 &:hover와 같이 사용한다.
+이때 &는 대명사와 같은 역할을 한다.
+
+
+두 코드의 차이
+import HelloSvg from './hello.svg' : img.svg를 img태그로서 불러옴
+import { ReactComponent as HelloComponent } from './hello.svg' : 수많은 <g>태그 (svg그자체) 로딩
 
 
 */
