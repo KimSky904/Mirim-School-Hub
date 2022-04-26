@@ -52,6 +52,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="springJDBC"/>
 			<item value="AOPPrintMsg"/>
 			<item value="Execution"/>
 			<item value="AOP"/>
@@ -66,7 +67,6 @@
 			<item value="JavaDI"/>
 			<item value="JavaConfiguration"/>
 			<item value="AutoDI"/>
-			<item value="SetterDI"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

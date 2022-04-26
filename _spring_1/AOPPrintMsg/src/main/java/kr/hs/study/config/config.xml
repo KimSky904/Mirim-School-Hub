@@ -17,6 +17,7 @@
        	<aop:aspect ref="advisor">
        		<aop:pointcut expression="execution(* *.say*(..))" id="point"/>
        		<aop:before method="beforeMethod" pointcut-ref="point"/>
+       		<aop:after-throwing method="afterthrowingMethod" pointcut-ref="point"/>
        	</aop:aspect>
        </aop:config>
        
