@@ -22,10 +22,24 @@ public class MainClass {
 		bean2.setData1(200);
 		bean2.setData2("spring200");
 		//insert_data È£Ãâ
-		dao.insert_data(bean1);
-		dao.insert_data(bean2);
+//		dao.insert_data(bean1);
+//		dao.insert_data(bean2);
+//		System.out.println("Inserted!!");
 		
-		System.out.println("Inserted!!");
+		
+		
+		//Update
+//		TestBean bean3 = new TestBean();
+//		bean3.setData1(100);
+//		bean3.setData2("testtest");
+//		dao.update_data(bean3);
+//		System.out.println("Updated!!");
+		
+		//Delete
+		int id = 100;
+		dao.delete_data(id);
+		System.out.println("Deleted!!");
+		
 		ctx.close();
 	}
 
