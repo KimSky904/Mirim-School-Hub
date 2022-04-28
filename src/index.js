@@ -1,8 +1,6 @@
 // import './jsxstudy/jsx-study1'
 // import './jsxstudy/jsx-study2'
-
 // import './school-test/HelloWorld'
-
 // import './component-basic/props-basic'
 // import './component-basic/props-children'
 // import './component-intermediate/state-study-1'
@@ -37,7 +35,11 @@
 // import './component-styling/using-styled-components'
 // import './component-styling/using-svg'
 // import './component-styling/using-react-icons'
-import './use-reducer-demo/use-reducer-counter-1'
+// import './use-reducer-demo/use-reducer-counter-1'
+// import './use-reducer-demo/use-reducer-todo-app-1'
+// import './use-callback-memo-demo/use-callback-counter-demo'
+// import './use-callback-memo-demo/use-memo-demo'
+import './use-callback-memo-demo/user-manage-app'
 
 
 
@@ -45,7 +47,8 @@ import './use-reducer-demo/use-reducer-counter-1'
 
 
 
-// 1주차
+
+
 /*
 [0303 / 작동 원리]
 barbel : ES6 code => ES5 code / JSX => ES- code / ... [언어 변환]
@@ -192,6 +195,33 @@ styled를 사용해서 style를 적용할 때, 특정 클래스를 불러와야 
 두 코드의 차이
 import HelloSvg from './hello.svg' : img.svg를 img태그로서 불러옴
 import { ReactComponent as HelloComponent } from './hello.svg' : 수많은 <g>태그 (svg그자체) 로딩
+
+dispatch 함수를 호출할 경우 reducer 함수가 자동으로 호출됨
+
+
+
+
+[0428 / reducer, useCallback, useMemo 훅]
+1. useReducer 훅 -> reducer함수와 초기상태를 받는 훅
+reducer함수가 작동하여 새 상태를 반환할 경우 리렌더링 유발 및 
+새 상태를 반환해주는 역할을 수행
+
+2. reducer 함수 => 상태와 액션(수행할 작업 정보가 담긴 객체)를 받아서 새 상태를 반환하는 함수
+(단, 변경 사항이 없으면 기존 상태 반환 가능)
+
+3. 액션 => dispatch함수를 통해 reducer함수로 전달할 작업에 대한 내용이 담긴 객체
+
+4. 액션 상수(*) => 액션의 type문자열 값을 상수화(오타 방지 및 명령어 문자열 변경 가능 용이)
+
+5. 액션 생성 함수(*) -> 액션을 매번 만들지 않고 함수 호출을 통해서 액션 객체를 반환해주는 함수
+(실수 방지 및 코드 가독성 향상)
+
+(*)는 필수 요소는 아님
+
+
+
+
+
 
 
 */
