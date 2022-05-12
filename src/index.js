@@ -39,7 +39,9 @@
 // import './use-reducer-demo/use-reducer-todo-app-1'
 // import './use-callback-memo-demo/use-callback-counter-demo'
 // import './use-callback-memo-demo/use-memo-demo'
-import './use-callback-memo-demo/user-manage-app'
+// import './use-callback-memo-demo/user-manage-app'
+// import './use-callback-memo-demo/using-react-memo'
+import './school-test/draw-star'
 
 
 
@@ -222,6 +224,10 @@ reducer함수가 작동하여 새 상태를 반환할 경우 리렌더링 유발
 
 
 
+[0512 / useCallback, useMemo, React.memo] 
+useCallback : 함수를 새로 생성하지 않고 기존 함수 사용(의존성 배열 값이 바뀌면 새로 생성)
+useMemo : 값을 새로 계산하지 않고 기존 값 사용(의존성 배열 값이 바뀌면 새로 생성)
+React.memo : 컴포넌트 자체의 내용을 지정하여 재활용 props값이 바뀌면 새로 렌더링한 내용 저장
 
 
 */
