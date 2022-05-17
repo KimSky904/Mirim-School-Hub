@@ -16,11 +16,12 @@
        <aop:config>
      		<aop:aspect ref="advisor"> <!-- advisor bean를 aspect 모듈로 만듬 -->
      			<aop:pointcut expression="execution(* method1())" id="point"/> <!-- pointcut 설정 -->
-     			<!-- <aop:before method="beforeMethod" pointcut-ref="point"/>  -->
-     			<!-- <aop:after method="afterMethod" pointcut-ref="point"/>    -->
-     			<!-- <aop:around method="aroundMethod" pointcut-ref="point"/>  -->
-     			<!-- <aop:after-returning method="afterReturning" pointcut-ref="point"/> -->
      			<aop:after-throwing method="afterThrowing" pointcut-ref="point" throwing="e"/>
      		</aop:aspect>
        </aop:config>
+       
+		<!-- <aop:before method="beforeMethod" pointcut-ref="point"/>  -->
+		<!-- <aop:after method="afterMethod" pointcut-ref="point"/>    -->
+		<!-- <aop:around method="aroundMethod" pointcut-ref="point"/>  -->
+		<!-- <aop:after-returning method="afterReturning" pointcut-ref="point"/> -->
 </beans>

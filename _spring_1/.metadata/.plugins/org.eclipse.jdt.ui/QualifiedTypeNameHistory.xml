@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="hs.kr.study.beans.TestBean1"/>
     <fullyQualifiedTypeName name="kr.hs.beans.TestBean"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.Sports"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.BaseBall"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.VollyBall"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.BasketBall"/>
@@ -27,7 +26,6 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Person"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
@@ -44,10 +42,15 @@
     <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfigClass"/>
     <fullyQualifiedTypeName name="org.apache.commons.dbcp2.BasicDataSource"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
     <fullyQualifiedTypeName name="kr.hs.study.dao.TestDAO"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Sports"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="kr.hs.study.mapper.MapperClass"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

@@ -2,6 +2,7 @@ package kr.hs.study.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 
 public class TestBean2 {
 	
@@ -16,7 +17,10 @@ public class TestBean2 {
 	@Qualifier("d2")
 	private DataBean2 data2; //container에 DataBean2타입의 객체(bean)가 존재할 경우 자동주입
 	
+	
 	public TestBean2() {}
+	
+	
 	public TestBean2(DataBean1 data1, DataBean2 data2) {
 		this.data1 = data1;
 		this.data2 = data2;

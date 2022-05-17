@@ -10,21 +10,11 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 	
-<!--  
-	<bean id="d1" class="kr.hs.study.beans.DataBean1"/>
-    <bean id="d2" class="kr.hs.study.beans.DataBean1"/>
-    <bean id ="t1" class="kr.hs.study.beans.TestBean1">
-    	<property name="data1" ref="d1"/>
-    	<property name="data2" ref="d2"/>
-	</bean> 
-	  -->                  
- 
-	
     
     <context:annotation-config/> <!-- java파일에 등록되어있는 annotation을 분석해서 실행해라 -->
     <bean id="d1" class="kr.hs.study.beans.DataBean1"/>
     <bean id="d2" class="kr.hs.study.beans.DataBean2"/>
-    <bean id="t2" class="kr.hs.study.beans.TestBean2"/>
+    <bean id="t2" class="kr.hs.study.beans.TestBean2" lazy-init="true"/>
     
     
     

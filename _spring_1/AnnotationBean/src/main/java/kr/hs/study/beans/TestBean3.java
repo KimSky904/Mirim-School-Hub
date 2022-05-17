@@ -1,6 +1,7 @@
 package kr.hs.study.beans;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
 
 public class TestBean3 {
 	private int data1;

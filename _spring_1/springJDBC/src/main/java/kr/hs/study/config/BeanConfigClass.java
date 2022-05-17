@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import kr.hs.study.beans.TestBean;
 
 @Configuration
-@ComponentScan(basePackages = {"kr.hs.study.beans","kr.hs.study.dao"})
+@ComponentScan(basePackages = {"kr.hs.study.beans","kr.hs.study.dao","kr.hs.study.mapper"})
 public class BeanConfigClass {
 	//접속정보 : BasicDataSource를 사용
 	@Bean

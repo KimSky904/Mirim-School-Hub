@@ -4,7 +4,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 
 public class AdvisorClass {
 	public void beforeMethod() {
-		System.out.println("충고 advice 횡단관심사");
+		System.out.println("충고 advice 횡단관심사 비포");
 	}
 	public void adterMethod() {
 		System.out.println("충고 advice 횡단관심사");
