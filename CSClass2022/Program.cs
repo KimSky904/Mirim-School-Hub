@@ -10,6 +10,18 @@ namespace CSClass2022
     {
         static void Main(string[] args)
         {
+            Car car = new Car();
+            car.SetInTime();
+            car.SetOutTime();
+
+
+
+            Random random = new Random();
+            Console.WriteLine(random.Next(10, 100)); //정수 반환
+
+
+
+
         }
     }
 }
