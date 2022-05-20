@@ -10,6 +10,7 @@ namespace CSClass2022
             Car car = new Car();
             car.SetInTime();
             car.SetOutTime();
+            car.some(10);
 
 
 
