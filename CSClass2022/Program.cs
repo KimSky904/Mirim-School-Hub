@@ -29,13 +29,27 @@ namespace CSClass2022
             //remove 활용
             list.Remove(50);
 
-
-
-
             foreach (var i in list)
             {
                 Console.WriteLine("Count : "+list.Count + "item : "+i);
             }
+
+
+
+
+
+            //Math 클래스
+            Console.WriteLine(Math.Abs(-523412));
+            Console.WriteLine(Math.Ceiling(52.273));
+            Console.WriteLine(Math.Floor(52.283));
+            Console.WriteLine(Math.Max(52,233));
+            Console.WriteLine(Math.Min(52, 233));
+            Console.WriteLine(Math.Round(1.2345));
+            Console.WriteLine(Math.Round(1.2345, 3));
+            Console.WriteLine(Math.PI);
+
+
+
 
 
         }
