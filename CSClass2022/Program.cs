@@ -36,9 +36,6 @@ namespace CSClass2022
             }
 
 
-
-
-
             //Math 클래스
             Console.WriteLine(Math.Abs(-523412));
             Console.WriteLine(Math.Ceiling(52.273));
@@ -49,6 +46,8 @@ namespace CSClass2022
             Console.WriteLine(Math.Round(1.2345, 3));
             Console.WriteLine(Math.PI);
 
+
+            Hamburger ham = new Hamburger();
 
 
 
