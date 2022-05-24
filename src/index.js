@@ -41,9 +41,9 @@
 // import './use-callback-memo-demo/use-memo-demo'
 // import './use-callback-memo-demo/user-manage-app'
 // import './use-callback-memo-demo/using-react-memo'
-import './school-test/draw-star'
-
-
+// import './school-test/draw-star'
+// import './component-intermediate/todo-app-demo'
+import './custom-hook-demo/use-async-demo'
 
 
 
@@ -228,6 +228,14 @@ reducer함수가 작동하여 새 상태를 반환할 경우 리렌더링 유발
 useCallback : 함수를 새로 생성하지 않고 기존 함수 사용(의존성 배열 값이 바뀌면 새로 생성)
 useMemo : 값을 새로 계산하지 않고 기존 값 사용(의존성 배열 값이 바뀌면 새로 생성)
 React.memo : 컴포넌트 자체의 내용을 지정하여 재활용 props값이 바뀌면 새로 렌더링한 내용 저장
+
+
+
+
+[0524 / custom hook, error boundaries]
+error boundaries컴포넌트 생성 시 반드시 클래스 컴포넌트로 생성해야한다.
+
+
 
 
 */
