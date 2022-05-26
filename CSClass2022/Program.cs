@@ -60,8 +60,37 @@ namespace CSClass2022
 
 
 
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "김하늘1", grade = 3 },
+                new Student() { name = "김하늘2", grade = 2 },
+                new Student() { name = "김하늘3", grade = 3 },
+                new Student() { name = "김하늘4", grade = 1 },
+                new Student() { name = "김하늘5", grade = 1 },
+                new Student() { name = "김하늘6", grade = 1 },
+                new Student() { name = "김하늘7", grade = 2 },
+                new Student() { name = "김하늘8", grade = 2 },
+                new Student() { name = "김하늘9", grade = 3 },
+                new Student() { name = "김하늘10", grade = 3 }
+            };
 
+            for (int i = students.Count - 1; i >= 0 ; i--)
+            {
+                if (students[i].grade > 2) students.RemoveAt(i);
 
+            }
+
+            //for (int i = 0; i < students.Count; i++)
+            //{
+            //    if(students[i].grade > 2) students.Remove(students[i]);
+            //    Console.WriteLine(students[i].ToString());
+            //}
+
+            //foreach (var item in students)
+            //{
+            //    if(item.grade > 2) students.Remove(item);
+            //    Console.WriteLine(item.ToString());
+            //}
 
         }
     }
