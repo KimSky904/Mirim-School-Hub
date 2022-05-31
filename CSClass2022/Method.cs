@@ -22,6 +22,7 @@ namespace CSClass2022
             {
                 output+=i;
             }
+            some();
             return output;
         }
 
@@ -42,5 +43,13 @@ namespace CSClass2022
             }
             return output;
         }
+
+
+        static public void some()
+        {
+            // this.Multiply(1, 10);
+        }
+
+
     }
 }
