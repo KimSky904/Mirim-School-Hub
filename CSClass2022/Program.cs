@@ -92,6 +92,13 @@ namespace CSClass2022
             //    Console.WriteLine(item.ToString());
             //}
 
+
+
+
+            Method method = new Method();
+            Console.WriteLine(method.Multi(52.1, 273));
+            
+
         }
     }
 }
