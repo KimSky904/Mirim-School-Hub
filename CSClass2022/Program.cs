@@ -105,6 +105,18 @@ namespace CSClass2022
             //Console.WriteLine("abs : " + method.Abs(100)); //JAVA는 가능하지만 C#은 불가능
 
 
+            // int
+            Console.WriteLine(MyMath.Abs(521));
+            Console.WriteLine(MyMath.Abs(-51));
+
+            // double
+            Console.WriteLine(MyMath.Abs(5.21));
+            Console.WriteLine(MyMath.Abs(4.13));
+
+            // long
+            Console.WriteLine(MyMath.Abs(1224242L));
+            Console.WriteLine(MyMath.Abs(5554521L));
+
         }
     }
 }
