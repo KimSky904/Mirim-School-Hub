@@ -49,14 +49,14 @@ namespace CSClass2022
 
             Hamburger ham = new Hamburger();
 
-            Product productA = new Product();
-            productA.name = "포켓몬빵";
-            productA.price = 1500;
-            //인스턴스 변수 생성과 동시에 초기화 (C# 고유 문법)
-            Product productB = new Product() { name="소금빵", price=2000};
-            Product productC = new Product() { price=5500, name="당근케이크"};
-            // Product productD = new Product() { "이름", 1000 }; -> 에러 발생
-            Product productE = new Product() { name = "보름달" };
+            //Product productA = new Product();
+            //productA.name = "포켓몬빵";
+            //productA.price = 1500;
+            ////인스턴스 변수 생성과 동시에 초기화 (C# 고유 문법)
+            //Product productB = new Product() { name="소금빵", price=2000};
+            //Product productC = new Product() { price=5500, name="당근케이크"};
+            //// Product productD = new Product() { "이름", 1000 }; -> 에러 발생
+            //Product productE = new Product() { name = "보름달" };
 
 
 
@@ -117,6 +117,25 @@ namespace CSClass2022
             Console.WriteLine(MyMath.Abs(1224242L));
             Console.WriteLine(MyMath.Abs(5554521L));
 
+
+
+            Product product1 = new Product("포켓몬빵", 1500);
+            Product product2 = new Product("케이크", 4500);
+            Product product3 = new Product("초코빵", 500);
+
+
+            //Console.WriteLine("첫번째 위치");
+            //Console.WriteLine(Sample.value);
+            //Console.WriteLine("두번째 위치");
+            //Sample sample = new Sample();
+            //Console.WriteLine("세번째 위치");
+
+
+            Console.WriteLine("첫번째 위치");
+            Sample sample = new Sample();
+            Console.WriteLine("두번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("세번째 위치");
         }
     }
 }
