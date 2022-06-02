@@ -99,6 +99,12 @@ namespace CSClass2022
             Console.WriteLine(method.Multi(52.1, 273));
             Console.WriteLine("sum : "+method.Sum(1,100));
             Console.WriteLine("multiply : " + method.Multiply(1, 10));
+
+            Console.WriteLine("abs : " + Method.Abs(100));
+            Console.WriteLine("abs : " + Method.Abs(-100));
+            //Console.WriteLine("abs : " + method.Abs(100)); //JAVA는 가능하지만 C#은 불가능
+
+
         }
     }
 }

@@ -4,6 +4,10 @@ namespace CSClass2022
 {
     class Method
     {
+
+        int instanceVariable = 10;
+        static int classVariable = 10;
+
         public double Multi(double vq1, int v2)
         {
             return vq1 * v2;
@@ -47,9 +51,15 @@ namespace CSClass2022
 
         static public void some()
         {
-            // this.Multiply(1, 10);
+            Console.WriteLine(classVariable);
         }
 
+
+        public static int Abs(int input)
+        {
+            if (input < 0) return -input;
+            return input;
+        }
 
     }
 }
