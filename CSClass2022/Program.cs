@@ -152,6 +152,10 @@ namespace CSClass2022
             Box1 box = new Box1(10, 10);  
             box.Width = -10;
             Console.WriteLine("box의 면적 : " + box.Area);
+
+
+            Console.WriteLine(Fibonacci.Get(1));
+            Console.WriteLine(Fibonacci.Get(10));
         }
     }
 }
