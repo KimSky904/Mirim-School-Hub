@@ -136,6 +136,22 @@ namespace CSClass2022
             Console.WriteLine("두번째 위치");
             Console.WriteLine(Sample.value);
             Console.WriteLine("세번째 위치");
+
+
+
+            Box box1 = new Box(10, 10);
+            box1.width = -10;
+            Console.WriteLine("box1의 면적 : "+box1.Area());
+
+
+            Box2 box2 = new Box2(10, 10);
+            box2.setWidth(-10);
+            Console.WriteLine("box2의 면적 : " + box2.Area());
+
+
+            Box1 box = new Box1(10, 10);  
+            box.Width = -10;
+            Console.WriteLine("box의 면적 : " + box.Area);
         }
     }
 }
