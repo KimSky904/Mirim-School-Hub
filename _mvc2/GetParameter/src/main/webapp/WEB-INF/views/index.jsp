@@ -10,6 +10,9 @@
 <a href="test1?data1=100&data2=200">test1</a><hr>
 <a href="test2?data1=100&data2=200&data3=300&data3=400">test2</a><hr>
 <a href="test3?data1=10&data2=20&data3=30">test3</a><hr>
-<a href="test4/100/200/300">test4</a>
+<a href="test4/100/200/300">test4</a><hr>
+
+<a href="test5?data1=100&data2=200&data3=300&data3=400">test5 RequestParam</a>
+
 </body>
 </html>
