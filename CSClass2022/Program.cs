@@ -171,6 +171,23 @@ namespace CSClass2022
                 ((Dog)item).Bark();
             }
 
+
+
+            foreach (var item in animals)
+            {
+                item.Eat();
+                item.Sleep();
+                if(item is Dog)
+                {
+                    //item.Bark();
+                    ((Dog)item).Bark();
+                } else if (item is Cat)
+                {
+                    Cat cat = (Cat)item;
+                    cat.Meow();
+                }
+            }
+
         }
     }
 }
