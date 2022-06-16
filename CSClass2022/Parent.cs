@@ -31,5 +31,9 @@ namespace CSClass2022
         {
             Console.WriteLine("Parent(string param)");
         }
+        public virtual void Method2()
+        {
+            Console.WriteLine("부모의 메서드");
+        }
     }
 }

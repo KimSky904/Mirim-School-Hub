@@ -165,13 +165,13 @@ namespace CSClass2022
 
             //List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
             //List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
-            /*List<Animal> animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
-            foreach(var item in animals)
-            {
-                item.Eat();
-                item.Sleep();
-                ((Dog)item).Bark();
-            }*/
+            List<Animal> animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
+            //foreach(var item in animals)
+            //{
+            //    item.Eat();
+            //    item.Sleep();
+            //    ((Dog)item).Bark();
+            //}
 
 
             /*
@@ -230,6 +230,15 @@ namespace CSClass2022
             Console.WriteLine(((Parent)c).variable);
             c.Method();
             ((Parent)c).Method();
+
+            // override
+            c.Method2();
+            ((Parent)c).Method2();
+
+            foreach(var item in animals)
+            {
+                item.Eat();
+            }
         }
     }
 }

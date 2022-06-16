@@ -23,5 +23,9 @@ namespace CSClass2022
         {
             Child.counter++;
         }
+        public override void Method2()
+        {
+            Console.WriteLine("자식의 메서드");
+        }
     }
 }
