@@ -163,16 +163,16 @@ namespace CSClass2022
 
             //List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
             //List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
-            List<Animal> animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
+            /*List<Animal> animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
             foreach(var item in animals)
             {
                 item.Eat();
                 item.Sleep();
                 ((Dog)item).Bark();
-            }
+            }*/
 
 
-
+            /*
             foreach (var item in animals)
             {
                 item.Eat();
@@ -198,6 +198,23 @@ namespace CSClass2022
                 var cat = item as Cat;
                 if(cat!=null) cat.Meow();
             }
+            */
+
+
+
+            //0616
+            Child child1 = new Child();
+            Child child2 = new Child("string");
+
+
+            Parent parent = new Parent();
+            Child child = new Child();
+            Console.WriteLine("p.counter : " + Parent.counter + ", c.counter : " + Child.counter);
+            parent.CountParent();
+            Console.WriteLine("p.counter : " + Parent.counter + ", c.counter : " + Child.counter);
+            child.CountParent();
+            Console.WriteLine("p.counter : " + Parent.counter + ", c.counter : " + Child.counter);
+
 
         }
     }
