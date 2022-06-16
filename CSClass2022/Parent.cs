@@ -4,6 +4,8 @@ using System;
 namespace CSClass2022
 {
 
+    // public sealed class Parent
+    // public abstract class Parent
     public class Parent
     {
         public int variable = 213;
