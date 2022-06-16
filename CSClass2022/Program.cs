@@ -5,6 +5,8 @@ namespace CSClass2022
 {
     internal class Program
     {
+        
+
         static void Main(string[] args)
         {
             Car car = new Car();
@@ -216,6 +218,18 @@ namespace CSClass2022
             Console.WriteLine("p.counter : " + Parent.counter + ", c.counter : " + Child.counter);
 
 
+
+
+            // 섀도잉
+            int number = 20;
+            Console.WriteLine(number);
+
+            // 하이딩
+            Child c = new Child();
+            Console.WriteLine(c.variable);
+            Console.WriteLine(((Parent)c).variable);
+            c.Method();
+            ((Parent)c).Method();
         }
     }
 }
