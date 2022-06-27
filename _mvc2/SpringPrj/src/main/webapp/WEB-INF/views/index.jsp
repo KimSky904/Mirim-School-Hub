@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1 style="color:blue;">Hello, World!!!!!</h1>
-<a href="test1">구구단</a> | <a href="test2">성적 구하기</a>
+<a href="test1">구구단</a> | <a href="test2">성적 구하기 - MV</a>
 </body>
 </html>

@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Result!!</h1>
-
+<h2>${requestScope.data}</h2>
 </body>
 </html>
