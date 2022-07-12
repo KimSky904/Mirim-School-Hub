@@ -3,7 +3,20 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="test_db">
+ <mapper namespace="test">
+ 
+ 	<insert id="insert_data" parameterType="kr.hs.study.dto.DataBean">
+ 	insert into SpringMvcTest values(#{data1}, #{data2}, #{data3})
+ 	</insert>
+ 	
+ 	<select id="select_data" resultType="kr.hs.study.dto.DataBean">
+	select * from SpringMvcTest
+ 	</select>
+ 	
+ 	<delete id="delete_data" parameterType="java.lang.String">
+	delete from SpringMvcTest where data1=#{}	
+ 	</delete>
+ 
 <!-- 
  	<insert id="insert_data" parameterType="kr.hs.study.beans.DataDAO">
  	insert into mvc_table values(#{data1},#{data2},#{data3})
