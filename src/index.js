@@ -43,9 +43,9 @@
 // import './use-callback-memo-demo/using-react-memo'
 // import './school-test/draw-star'
 // import './component-intermediate/todo-app-demo'
-import './custom-hook-demo/use-async-demo'
-
-
+// import './custom-hook-demo/use-async-demo'
+// import './ect/using-portal'
+import './ATest/ref-demo'
 
 
 
@@ -234,7 +234,15 @@ React.memo : 컴포넌트 자체의 내용을 지정하여 재활용 props값이
 
 [0524 / custom hook, error boundaries]
 error boundaries컴포넌트 생성 시 반드시 클래스 컴포넌트로 생성해야한다.
+커스텀 훅
+-> 코드 중복 최소화
+-> 기존에 제공되는 훅(useState, useEffect, useCallback..)을 사용하여 작성
 
+
+
+
+[0526 / Potal]
+포탈은 컴포넌트 바깥 영역에 정의
 
 
 
