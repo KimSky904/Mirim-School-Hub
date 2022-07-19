@@ -7,5 +7,6 @@ import kr.hs.study.dto.DataBean;
 public interface daoInterface {
 	public void insert(DataBean bean);
 	public List<DataBean> select();
-	// public void delete(String value);
+	public void update(String value);
+	public void delete(String value);
 }

@@ -14,13 +14,8 @@
  	</select>
  	
  	<delete id="delete_data" parameterType="java.lang.String">
-	delete from SpringMvcTest where data1=#{}	
+	delete from SpringMvcTest where data1=#{data1}	
  	</delete>
  
-<!-- 
- 	<insert id="insert_data" parameterType="kr.hs.study.beans.DataDAO">
- 	insert into mvc_table values(#{data1},#{data2},#{data3})
- 	</insert>
- -->
  
 </mapper>       

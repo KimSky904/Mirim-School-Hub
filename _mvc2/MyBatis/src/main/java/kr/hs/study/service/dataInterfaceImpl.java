@@ -25,9 +25,15 @@ public class dataInterfaceImpl implements dataInterface {
 		return dao.select();
 	}
 
-//	@Override
-//	public void delete(String value) {
-//		dao.delete(value);
-//	}
+	@Override
+	public void delete(String value) {
+		dao.delete(value);
+	}
+
+	@Override
+	public void update(DataBean bean) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

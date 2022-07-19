@@ -9,9 +9,9 @@
 <body>
 <h1>hi Spring MVC~</h1>
 <img src="img/1.svg"/><hr>
+
 <a href="input_data">input_data</a><br/>
 <a href="read_data">read_data</a><br/>
-<!-- <a href="delete_data">delete_data</a><br/> -->
-<!-- data1이 1인 요소 삭제 -->
+<a href="delete_data?data1=4">delete_data</a><br/>
 </body>
 </html>
