@@ -11,20 +11,19 @@ namespace CSClass2
         static void Main(string[] args)
         {
             Wanted<string> wantedString = new Wanted<string>("String");
-            Wanted<int> wantedInt = new Wanted<int>(4523);
-            Wanted<double> wantedDouble = new Wanted<double>(13.224);
+            Wanted<int> wantedInt = new Wanted<int>(52273);
+            Wanted<double> wantedDouble = new Wanted<double>(52.273);
 
             Console.WriteLine(wantedString.Value);
             Console.WriteLine(wantedInt.Value);
             Console.WriteLine(wantedDouble.Value);
 
             Products p = new Products();
-            Console.Write("오늘의 점심 메뉴는 "+p[2]+" 입니다.");
+            Console.WriteLine("오늘의 점심 메뉴는 " + p[2] + "입니다.");
             p[2] = "단무지";
-            Console.Write("오늘의 점심 메뉴는 " + p[2] + " 입니다.");
+            Console.WriteLine("오늘의 점심 메뉴는 " + p[2] + "입니다.");
 
-
-            Console.WriteLine("숫자 입력 : ");
+            Console.WriteLine("숫자 입력: ");
             //int output;
             bool result = int.TryParse(Console.ReadLine(), out int output);
             if (result)
@@ -35,15 +34,13 @@ namespace CSClass2
             {
                 Console.WriteLine("숫자를 입력해주세요!");
             }
-
-
-
-            int x = 0, y = 0, vx = 1, vy = 1;
+            int x = 0;
+            int y = 0;
+            int vx = 1;
+            int vy = 1;
             Console.WriteLine("현재 좌표: (" + x + "," + y + ")");
             NextPos(x, y, vx, vy, out x, out y);
             Console.WriteLine("다음 좌표: (" + x + "," + y + ")");
-
-
 
             Point point;
             point.x = 10;
@@ -63,6 +60,18 @@ namespace CSClass2
             psB.x = 100; psB.y = 200;
             Console.WriteLine(psA.x + " / " + psA.y);
             Console.WriteLine(psB.x + " / " + psB.y);
+
+            List<Product> list = new List<Product>() {
+                new Product(){ Name="고구마", Price=1500 },
+                new Product(){ Name="사과", Price=2400 },
+                new Product(){ Name="바나나", Price=1000 },
+                new Product(){ Name="배", Price=3000 },
+            };
+            list.Sort();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
 
         static void NextPos(int x, int y, int vx, int vy, out int rx, out int ry)
@@ -99,6 +108,7 @@ namespace CSClass2
             public int y;
             public string testA;
             public string testB;
+
             public Point(int x, int y)
             {
                 this.x = x;
@@ -114,5 +124,6 @@ namespace CSClass2
                 this.testB = s;
             }
         }
+
     }
 }
