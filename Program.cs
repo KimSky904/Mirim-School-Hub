@@ -74,8 +74,31 @@ namespace CSClass2
                     Console.WriteLine(item);
                 }
             }
+
+            IBasic test = new TestClass();
+            test.TestProperty = 3;
+            test.TestInstanceMethod();
+            //test.foobar();
+            (test as TestClass).foobar();
         }
 
+        class TestClass : IBasic
+        {
+            public int foobar()
+            {
+                return -1;
+            }
+            public int TestProperty
+            {
+                get => throw new NotImplementedException();
+                set => throw new NotImplementedException();
+            }
+
+            public int TestInstanceMethod()
+            {
+                throw new NotImplementedException();
+            }
+        }
         class Dummy : IDisposable
         {
             public void Dispose()
