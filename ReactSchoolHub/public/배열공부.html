@@ -1,0 +1,50 @@
+<script>
+
+// 배열 다루기
+// concat : 추가
+// filter : 제거
+// map : 변경
+
+let lst = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Jane" },
+    { id: 3, name: "Paul" },
+]
+
+lst.push({id:4,name:"Ken"})
+// lst의 내용은 변경되지만 React는 배열의 참조값을 통해 변경여부를 검사하기 때문에 변동된 것을 모르고 렌더링을 하지 않는다.
+let newLst = lst.concat({id:4,name:"Ken"})
+// 따라서 위의 형태로 작성해야 한다.
+
+console.log(lst)
+console.log(newLst)
+console.log(lst == newLst)
+
+let updatedId = 2
+let updatedName = "Smith"
+let updatedLst = lst.map(item => {
+    if(item.id === updatedId) {
+        // 다음과 같이 객체를 직접 변경하지 않고 (원본 리스트는 불변!)
+        // item.name = updatedName
+
+        // 전개 연산자를 이용하여 값 복사 후 덮어쓰기 전략으로 새 객체를 생성하여 대입하기
+        item = { ...item, name: updatedName }
+    }
+    return item
+})
+console.log("map =====")
+console.log(lst) // 원본에 영향 X
+console.log(updatedLst) // 새로운 객체
+console.log(lst === updatedLst) // false
+
+
+let removedId = 1
+let removedLst = lst.filter(item => {
+    return item.id !== removedId
+})
+console.log("filter =====")
+console.log(lst) // 원본에 영향 X
+console.log(removedLst) // 새로운 객체
+console.log(lst === removedLst) // false
+
+</script>
