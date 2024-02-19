@@ -1,0 +1,51 @@
+.register {
+    height:calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+        ),
+        url(https://mblogthumb-phinf.pstatic.net/MjAxODA1MTJfMTk4/MDAxNTI2MTEwMjc3NzM4.1PyCw1XO5uV6E4-T1cXnCawrRL62PjUnW-6k-4F2lawg.EVON2gDrtoyNdtsWpnmEdSDe-hRdOmCUygLLZbVS4jYg.JPEG.uiui_8850/%EB%85%B8%ED%8A%B8%EB%B6%81_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4_%2823%29.jpg?type=w800);
+    background-size:cover;
+}
+
+.registerForm {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm > label {
+    margin: 10px 0;
+}
+
+.registerInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.registerButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color:teal;
+    border: none;
+    color: white;
+    border-radius:10px;
+    padding:10px;
+}
+
+.registerLoginButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color:lightcoral;
+    cursor: pointer;
+    border:none;
+    padding:10px;
+    color:white;
+    border-radius: 10px;
+}
