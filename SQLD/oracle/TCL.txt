@@ -1,0 +1,5 @@
+//TCL
+COMMIT; -> 변경한 데이터 데이터베이스에 반영 (DDL,DCL 자동COMMI됨)
+ROLLBACK; -> 변경된 사항 취소
+SAVEPOINT T1;
+ROLLBACK TO T1;

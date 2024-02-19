@@ -1,0 +1,14 @@
+sys /as sysdba
+mirim
+
+
+SID확인 : select instance from v$thread;
+DB이름 확인 : select name,db_unique_name from v$database;
+포트확인 :  select dbms_xdb.gethttpport() from dual;
+포트변경 :  exec dbms_xdb.sethttpport(변경할 숫자);
+
+
+cmd에서 확인
+lsnrctl status : 리스너 상태확인
+lsnrctl stop : 리스너 중지
+lsnrctl start : 리스너 시작

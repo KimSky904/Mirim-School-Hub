@@ -1,0 +1,19 @@
+//서브쿼리 -> select문 안에 select문
+//inline view -> from구 안 select 사용(가상의 뷰 만듬)
+select * from (select rownum num,ename from emp) a where num<5;
+//scala subquery -> select문에 subquery 사용
+select * from emp where deptno = (select deptno from dept where deptno = 10);
+
+
+//단일 행 서브쿼리
+//다중 행 서브쿼리 -> 서브쿼리 결과가 여러개의 행 반환
+//IN
+SELECT ENAME,DEPTNAME,SAL FROM EMP,DEPT WHERE EMP.DEPTNO = DEPT.DEPTNO AND EMP.EMPNO IN (SELECT EMPNO FROM EMP WHERE SAL > 2000);
+//ALL -> 20보다 작거나 크다 && 30보다 작거나 크다
+SELECT * FROM EMP WHERE DEPTNO <= ALL(20,30);
+//EXISTS
+SELECT ENAME,DEPTNAME,SAL FROM EMP,DEPT WHERE EMP.DEPTNO = DEPT.DEPTNO AND EXISTS (SELECT 1 FROM EMP WHERE SAL > 2000);
+//스칼라 서브쿼리 -> 한행과 한칼럼만 반환 (여러개면 오류)
+SELECT ENAME AS "이름", SAL AS "급여", (SELECT AVG(SAL) FROM EMP) AS "평균급여" FROM EMP WHERE EMPNO = 1000;
+//연관(CORRELATED) 서브쿼리
+SELECT * FROM EMP A WHERE A.DEPTNO = (SELECT DEPTNO FROM DEPT B WHERE B.DEPTNO = A.DEPTNO);

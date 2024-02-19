@@ -1,0 +1,5 @@
+//파티션 -> 대용량의 테이블을 여러 데이터파일에 분리하여 저장
+//RANGE PARTITION -> 값의 범위를 기준으로 나눔
+//LIST PARTITION -> 특정 값을 기준으로 나눔
+//HASH PARTITION -> 내부적 자동 관리
+//COMPOSITE PARTITION -> 여러 파티션 기법 조합
