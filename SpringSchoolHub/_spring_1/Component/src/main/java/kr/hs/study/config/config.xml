@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	        
+        <!-- 지정된 패키지 밑의 모든 클래스들의 annotation을 분석해서 실행 -->
+        <context:component-scan base-package="kr.hs.study.beans"/>
+        <context:component-scan base-package="kr.hs.study.beans2"/>
+        
+ 		<!-- 
+	 		@Component : bean 생성
+	 		@Autowired : 자동주입
+	 		@Qualifier : 이름으로 자동주입
+	 		@PreDestroy : 객체소멸 전에 실행
+	 		@PostConstruct : 셍성자 실행후에 바로 실행
+ 		-->
+</beans>

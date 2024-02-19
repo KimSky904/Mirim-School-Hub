@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	                    
+ 	<!-- 생성자 DI -->               
+     <bean class="kr.hs.study.beans.DataBean" id="d1" lazy-init="true" scope="prototype"/>
+     <bean class="kr.hs.study.beans.TestBean" id="t1">
+     	<constructor-arg value="11" type="int"/>
+     	<constructor-arg value="11.11" type="double"/>
+     	<constructor-arg value="Wacom" type="String"/>
+     	<constructor-arg ref="d1" index="3"/>
+     	<constructor-arg ref="d1" index="4"/>
+     </bean>
+    
+    <!-- Setter DI -->
+    <bean class="kr.hs.study.beans.DataBean2" id="d2" lazy-init="true" scope="prototype"/>
+    <bean class="kr.hs.study.beans.TestBean2" id="t2" lazy-init="true">
+    	<property name="data1" value="22"/>
+    	<property name="data2" value="22.22"/>
+    	<property name="data3" ref="d2"/>
+    	<property name="data4" ref="d2"/>
+    </bean>
+    
+	         
+</beans>

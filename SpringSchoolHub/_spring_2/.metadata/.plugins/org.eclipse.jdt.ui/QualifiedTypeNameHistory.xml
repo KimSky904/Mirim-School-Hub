@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Person"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.magazine"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.poet"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.novel"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Designer"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Developer"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Flow.Publisher"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Publisher"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Book"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Employee"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean1"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean2"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfigClass"/>
+    <fullyQualifiedTypeName name="kr.hs.study.dao.ClassDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.apache.commons.dbcp2.BasicDataSource"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="kr.hs.study.mapper.ClassMapper"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>
